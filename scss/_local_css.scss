@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+//
+// Custom Styles 
+//
+
+// Media Query Starts
+// @media #{$Desktop} {}
+// @media #{$iPadPortrait} {}
+// @media #{$Phone} {}
+// @media #{$Five00} {} 
+
+// Fonts Sizes - OVERRIDE
+  $h1-font-size: rem-calc(36); // $h1-font-size: rem-calc(44);  // not used yet
+  $h2-font-size: rem-calc(18); // $h2-font-size: rem-calc(37);  // 22
+  $h3-font-size: rem-calc(16); // $h3-font-size: rem-calc(27);  // 18
+  $h4-font-size: rem-calc(16); // $h4-font-size: rem-calc(23);  // not used yet
+  $h5-font-size: rem-calc(16); // $h5-font-size: rem-calc(18);  // not used yet
+  $h6-font-size: rem-calc(16); // $h6-font-size: 1rem;          // not used yet
+
+// Typical Paragraphs
+  $paragraph-font-size: rem-calc(13); // 15
+
+// Colors
+  $color-maroon: #781a42; //#7c2142 BCF
+  $color-black: #000;
+  $color-white: #fff;
+  $color-gray222: #222; // starting additional colors
+  $color-gray444: #444;
+  $color-gray555: #555;
+  $color-gray666: #666;
+  $color-grayccc: #ccc;
+  $color-grayeee: #eee;
+
+body {
+  background-color: $color-white;
+}
+
+header {
+  position:fixed;
+  height: 50px;
+  top:0px; 
+  margin:auto; 
+  z-index:100000;
+  background-color: #fff;
+  .logo {
+    overflow: visible;
+  }
+}
+
+.navArrows {
+  background-color: #eee;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width {
+  width: 100%;
+  /*height: 100%;*/
+  box-sizing: border-box;
+  background-color: $color-grayeee;
+  &.depth {
+    /*background-image: url("http://charlesleonthompson.com/wp-content/uploads/2014/12/IMG_3122-1024x1280.jpg");
+  
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 2.5%;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    */
+    
+    width: 100%;
+    height: 350px;
+    position: relative;
+    /*padding-top: 1.875rem;*/
+    overflow: hidden;
+    /*
+    
+    margin-bottom: 0;
+    */
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: -1;
+      @media #{$iPadPortrait} { //needs work!
+        max-width:1080px;
+        height:auto;
+      }
+    }
+    section {
+      position: absolute;
+      top:0;
+      left:0%;
+      right:0%;
+    }
+    .in {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+      padding-right: 10px;
+      right:0px;
+      top: 150px;
+    }
+  }
+}
+
+header, footer {
+  border: 1px solid $color-maroon;
+  width: 100%;
+}
+
+.content {}
+  section, {
+    border: 1px solid $color-gray666;
+    width: 100%;
+    h1 {
+      font-family: 'ComeniaSansCondRegular';
+      font-size: $h1-font-size;
+      color: $color-maroon;
+    }
+    h2 {
+      font-size: $h2-font-size;
+      font-family: 'ComeniaSansCondRegular';
+      text-transform: uppercase;
+      color: $color-gray444;
+      padding: 0 0 rem-calc(7) 0;
+    }
+    h3, h4, h5, h6 {
+      font-size: $h3-font-size;
+      font-family: $font-lucida;
+      color: $color-black;
+      padding: 0 0 0 0;
+      line-height: 18px; //22
+      margin: 0 0 0 0;
+    }
+    p {
+      font-size: $paragraph-font-size;
+      font-family: $font-lucida;
+      color: $color-gray;
+      padding: rem-calc(9) 0 rem-calc(9) 0;
+      line-height: 16px; //19
+      margin: 0;
+    }
+    a {
+      color: $color-maroon;
+      font-weight: $bold;
+      &:hover {
+        color: $color-gray666;
+      }
+    }
+    strong {
+      font-weight: $bold;
+    }
+    em {
+      font-style: $italic;
+    }
+  }
