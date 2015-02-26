@@ -152,29 +152,26 @@
 	"buffers":
 	[
 		{
-			"file": "css/app.css",
+			"file": "css/bob.css",
 			"settings":
 			{
-				"buffer_size": 50368,
+				"buffer_size": 185044,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "scss/app.scss",
+			"file": "scss/bob.scss",
 			"settings":
 			{
-				"buffer_size": 2011,
+				"buffer_size": 2003,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "@charset \"utf-8\";\n/* CSS Document */\n\n//\n// Custom Styles \n//\n\n// Media Query Starts\n// @media #{$Desktop} {}\n// @media #{$iPadPortrait} {}\n// @media #{$Phone} {}\n// @media #{$Five00} {} \n\n// Fonts Sizes - OVERRIDE\n  $h1-font-size: rem-calc(36); // $h1-font-size: rem-calc(44);  // not used yet\n  $h2-font-size: rem-calc(18); // $h2-font-size: rem-calc(37);  // 22\n  $h3-font-size: rem-calc(16); // $h3-font-size: rem-calc(27);  // 18\n  $h4-font-size: rem-calc(16); // $h4-font-size: rem-calc(23);  // not used yet\n  $h5-font-size: rem-calc(16); // $h5-font-size: rem-calc(18);  // not used yet\n  $h6-font-size: rem-calc(16); // $h6-font-size: 1rem;          // not used yet\n\n// Typical Paragraphs\n  $paragraph-font-size: rem-calc(13); // 15\n\n// Colors\n  $color-maroon: #781a42; //#7c2142 BCF\n  $color-black: #000;\n  $color-white: #fff;\n  $color-gray222: #222; // starting additional colors\n  $color-gray444: #444;\n  $color-gray555: #555;\n  $color-gray666: #666;\n  $color-grayccc: #ccc;\n  $color-grayeee: #eee;\n\nbody {\n  background-color: $color-white;\n}\n\n.full-width {\n  width: 100%;\n  /*height: 100%;*/\n  box-sizing: border-box;\n  background-color: $color-grayeee;\n  &.depth {\n    /*background-image: url(\"http://charlesleonthompson.com/wp-content/uploads/2014/12/IMG_3122-1024x1280.jpg\");\n  \n    position: relative;\n    width: 100%;\n    height: 60%;\n    background-position: center center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    padding: 0 2.5%;\n    overflow: hidden;\n    background-position: center center;\n    background-size: cover;\n    background-repeat: no-repeat;\n    */\n    \n    width: 100%;\n    height: 350px;\n    position: relative;\n    /*padding-top: 1.875rem;*/\n    overflow: hidden;\n    /*\n    \n    margin-bottom: 0;\n    */\n    img {\n      display: block;\n      margin-left: auto;\n      margin-right: auto;\n      z-index: -1;\n\n        .full-width.depth img {\n    max-width:1080px;\n    height:auto;\n    }\n  }\n}\n\n\n\nsection, header, footer {\n  border: 1px solid $color-gray666;\n  width: 100%;\n  h1 {\n    font-family: 'ComeniaSansCondRegular';\n    font-size: $h1-font-size;\n    color: $color-maroon;\n  }\n  h2 {\n    font-size: $h2-font-size;\n    font-family: 'ComeniaSansCondRegular';\n    text-transform: uppercase;\n    color: $color-gray444;\n    padding: 0 0 rem-calc(7) 0;\n  }\n  h3, h4, h5, h6 {\n    font-size: $h3-font-size;\n    font-family: $font-lucida;\n    color: $color-black;\n    padding: 0 0 0 0;\n    line-height: 18px; //22\n    margin: 0 0 0 0;\n  }\n  p {\n    font-size: $paragraph-font-size;\n    font-family: $font-lucida;\n    color: $color-gray;\n    padding: rem-calc(9) 0 rem-calc(9) 0;\n    line-height: 16px; //19\n    margin: 0;\n  }\n  a {\n    color: $color-maroon;\n    font-weight: $bold;\n    &:hover {\n      color: $color-gray666;\n    }\n  }\n  strong {\n    font-weight: $bold;\n  }\n  em {\n    font-style: $italic;\n  }\n}",
 			"file": "scss/_local_css.scss",
-			"file_size": 2882,
-			"file_write_time": 130689411026942500,
 			"settings":
 			{
-				"buffer_size": 2868,
+				"buffer_size": 4510,
 				"line_ending": "Windows"
 			}
 		},
@@ -182,15 +179,15 @@
 			"file": "working.html",
 			"settings":
 			{
-				"buffer_size": 3830,
+				"buffer_size": 6334,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "index.html",
+			"file": "scss/_settings.scss",
 			"settings":
 			{
-				"buffer_size": 6738,
+				"buffer_size": 50197,
 				"line_ending": "Windows"
 			}
 		}
@@ -267,6 +264,10 @@
 	},
 	"file_history":
 	[
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/bower_components/foundation/js/foundation/foundation.offcanvas.js",
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/diagram.html",
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/index.html",
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/css/app.css",
 		"/Z/Public/$$$Feirstein/Development/004/feirstein2.php",
 		"/Z/Public/$$$Feirstein/Development/004/feirstein/build/styles/app.min.css",
 		"/Z/Public/$$$Feirstein/Development/004/feirstein/about.php",
@@ -390,11 +391,7 @@
 		"/Z/Public/$BCF_Website/Development/003-Production5/statsHighlights.html",
 		"/Z/Public/$BCF_Website/Development/003-Production5/sass/foundation/components/_buttons.scss",
 		"/Z/Public/$BCF_Website/Development/003-Production5/sass/_settings.scss",
-		"/Z/Public/$BCF_Website/Development/003-Production5/js/jquery.js",
-		"/Z/Public/$BCF_Website/Development/003-Production5/OT-Templates/Foundation - footerScripts.txt",
-		"/Z/Public/$BCF_Website/Development/003-Production5/OT-Templates/Foundation - Content Video.txt",
-		"/Z/Public/$BCF_Website/Development/003-Production5/OT-Templates/Foundation - Home Page.txt",
-		"/Z/Public/$BCF_Website/Development/003-Production5/OT-Templates/Foundation - News Landing Page.txt"
+		"/Z/Public/$BCF_Website/Development/003-Production5/js/jquery.js"
 	],
 	"find":
 	{
@@ -414,6 +411,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".off-canvas-wrap",
+			"34. Top Bar",
+			"Top Bar Variables",
+			"$oil",
+			"18. Off-canvas",
+			"show",
+			"footer",
+			"favic",
 			"@",
 			"hover",
 			"a:hover {",
@@ -505,14 +510,6 @@
 			"\"http://www.brooklyn.cuny.edu/gradadmissions\"",
 			"APPLICATIONS OPEN",
 			"\"http://www.brooklyn.cuny.edu/gradadmissions\"",
-			"\"/faq\"",
-			"\"/contact-us\"",
-			"\"/about\"",
-			"\"/facilities\"",
-			"\"/academics\"",
-			"\"/admissions\"",
-			"\"/\"",
-			"/build/",
 			"\"/faq\"",
 			"\"/contact-us\"",
 			"\"/about\"",
@@ -692,47 +689,46 @@
 			[
 				{
 					"buffer": 0,
-					"file": "css/app.css",
+					"file": "css/bob.css",
 					"settings":
 					{
-						"buffer_size": 50368,
+						"buffer_size": 185044,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								129491,
+								129513
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1501.0,
+						"translation.y": 78380.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "scss/app.scss",
+					"file": "scss/bob.scss",
 					"settings":
 					{
-						"buffer_size": 2011,
+						"buffer_size": 2003,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								304,
+								304
 							]
 						],
 						"settings":
@@ -750,15 +746,15 @@
 					"file": "scss/_local_css.scss",
 					"settings":
 					{
-						"buffer_size": 2868,
+						"buffer_size": 4510,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1939,
-								1939
+								3458,
+								3474
 							]
 						],
 						"settings":
@@ -768,7 +764,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 765.0,
+						"translation.y": 2093.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -778,15 +774,15 @@
 					"file": "working.html",
 					"settings":
 					{
-						"buffer_size": 3830,
+						"buffer_size": 6334,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5168,
+								5082
 							]
 						],
 						"settings":
@@ -795,35 +791,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 510.0,
+						"translation.y": 1853.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "index.html",
+					"file": "scss/_settings.scss",
 					"settings":
 					{
-						"buffer_size": 6738,
+						"buffer_size": 50197,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								27374,
+								27374
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 11954.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -890,7 +884,7 @@
 		[
 			[
 				"",
-				"/Z/Public/webDevelopment/master/MASTER.sublime-project"
+				"/Z/Public/$$$Feirstein/Development/004/feirstein/Feirstein.sublime-project"
 			]
 		],
 		"width": 380.0
