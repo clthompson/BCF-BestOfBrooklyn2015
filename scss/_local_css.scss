@@ -15,12 +15,16 @@
   $h1-font-size: rem-calc(36); // $h1-font-size: rem-calc(44);  // not used yet
   $h2-font-size: rem-calc(18); // $h2-font-size: rem-calc(37);  // 22
   $h3-font-size: rem-calc(16); // $h3-font-size: rem-calc(27);  // 18
-  $h4-font-size: rem-calc(16); // $h4-font-size: rem-calc(23);  // not used yet
+  $h4-font-size: rem-calc(14); // $h4-font-size: rem-calc(23);  // not used yet
   $h5-font-size: rem-calc(16); // $h5-font-size: rem-calc(18);  // not used yet
   $h6-font-size: rem-calc(16); // $h6-font-size: 1rem;          // not used yet
 
 // Typical Paragraphs
   $paragraph-font-size: rem-calc(13); // 15
+
+// Backgrounds and Sprite Sheets
+  $background-d: url('http://www.brooklyn.cuny.edu/web/sup_foundation/diagonals.png');
+  $SpriteSheet: url('http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png');
 
 // Colors
   $color-maroon: #781a42; //#7c2142 BCF
@@ -32,12 +36,18 @@
   $color-gray666: #666;
   $color-grayccc: #ccc;
   $color-grayeee: #eee;
+  $color-grayefe: #efefef;
+
+// Line Styles
+  $thick-maroon: 8px solid $color-maroon;
+  $thin-gray666: 1px solid $color-gray666;
 
 body {
-  background-color: $color-white;
+  //background-color: $color-white;
 }
 
 header {
+  width: 100%;
   position:fixed;
   height: rem-calc(55);
   top:0px; 
@@ -66,12 +76,44 @@ header {
       height: 69px; // 56
     }
   }
-  //.off-canvas-wrap {
-  //  height: rem-calc(55);
-  //  @media #{$Phone} {
-  //    height: rem-calc(45);
-  //  }
-  //}
+  nav.top-bar {
+    background-color: $color-white;
+    .top-bar-section {
+      //background-color: $color-white;
+      ul {
+        //background-color: $color-white;
+        li a {
+          font-family: 'ComeniaSansCondRegular';
+          text-transform: uppercase;
+          font-size: $h4-font-size;
+          color: $color-black;
+          &:hover {
+            color: $color-gray666;
+          }
+        }
+      }
+    }
+  }
+  .right-off-canvas-menu {
+    //background-color: $color-white;
+    ul li a {
+      font-family: 'ComeniaSansCondRegular';
+      text-transform: uppercase;
+      font-size: $h4-font-size;
+      color: $color-black;
+      &:hover {
+        color: $color-gray666;
+      }
+      margin: 10px;
+    }
+  }
+    //.right-off-canvas-menu ul, li a 
+    //.off-canvas-wrap {
+    //  height: rem-calc(55);
+    //  @media #{$Phone} {
+    //    height: rem-calc(45);
+    //  }
+    //}
   .tab-bar .menu-icon {
     height: rem-calc(55);
     //@media #{$Phone} {
@@ -86,10 +128,45 @@ header {
 }
 
 .navArrows {
-  background-color: #eee;
+  background-image: $background-d;
+  background-repeat:repeat;
+  height: 71px;
   text-align: center;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  @media #{$Phone} {
+    display: none;
+  }
+  .arrowDown{
+    display: inline-block;
+    background: $SpriteSheet no-repeat 0px 0px;
+    width: 52px;
+    height: 26px;
+    margin: rem-calc(22) rem-calc(11) 0 rem-calc(11);
+    &:hover {
+      background: $SpriteSheet no-repeat -142px 0px;
+    }
+  }
+  .arrowUp {
+    display: inline-block;
+    background: $SpriteSheet no-repeat -67px 0px;
+    width: 52px;
+    height: 26px;
+    margin: rem-calc(22) rem-calc(11) 0 rem-calc(11);
+    &:hover {
+      background: $SpriteSheet no-repeat -199px 0px;
+    }
+  }
+}
+
+.anchor{
+  position: relative;
+  display: block;
+  top: -78px;
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
 
 .full-width {
@@ -150,19 +227,28 @@ header {
   }
 }
 
-header, footer {
-  //border: 1px solid $color-maroon;
-  width: 100%;
-}
-
 .content {
   margin-top: 50px;
-
+  .rowInside {
+    padding: 0px 75px 0px 75px;
+  }
+  .sectionGray {
+    background-color: $color-grayeee;
+    border-right: 2px solid $color-grayeee;
+    padding: rem-calc(20);
+  }
   .sectionObject {
-    //border: 1px solid $color-gray666;
-    width: 100%;
+    .sectionHeaderLine {
+      border-top: $thin-gray666;
+      margin: rem-calc(10) rem-calc(10) rem-calc(10) rem-calc(10);
+    }
     .contentElements {
-      border-top: 1px solid $color-gray666;
+      margin: 0 rem-calc(10) 0 rem-calc(10);
+      padding: 0 rem-calc(10) rem-calc(30) rem-calc(10);
+    }
+    img {
+      float: left;
+      margin: 0 rem-calc(20) 0 rem-calc(10);
     }
     h1 {
       font-family: 'ComeniaSansCondRegular';
@@ -209,4 +295,11 @@ header, footer {
       font-style: $italic;
     }
   }
+}
+
+footer {
+  width: 100%;
+  border-top: $thick-maroon;
+  background-image: $background-d;
+  background-repeat: repeat;
 }

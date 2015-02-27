@@ -367,8 +367,8 @@ select {
 /* line 242, ../bower_components/foundation/scss/foundation/components/_grid.scss */
 .row .row {
   width: auto;
-  margin-left: -0.15625rem;
-  margin-right: -0.15625rem;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
   max-width: none;
@@ -401,8 +401,8 @@ select {
 /* line 247, ../bower_components/foundation/scss/foundation/components/_grid.scss */
 .column,
 .columns {
-  padding-left: 0.15625rem;
-  padding-right: 0.15625rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 100%;
   float: left;
 }
@@ -590,8 +590,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.15625rem;
-    padding-right: 0.15625rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 
@@ -772,8 +772,8 @@ select {
   /* line 222, ../bower_components/foundation/scss/foundation/components/_grid.scss */
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
-    padding-left: 0.15625rem;
-    padding-right: 0.15625rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 }
@@ -950,8 +950,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.15625rem;
-    padding-right: 0.15625rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 
@@ -1132,8 +1132,8 @@ select {
   /* line 222, ../bower_components/foundation/scss/foundation/components/_grid.scss */
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
-    padding-left: 0.15625rem;
-    padding-right: 0.15625rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 
@@ -1478,8 +1478,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.15625rem;
-    padding-right: 0.15625rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 
@@ -1660,8 +1660,8 @@ select {
   /* line 222, ../bower_components/foundation/scss/foundation/components/_grid.scss */
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
-    padding-left: 0.15625rem;
-    padding-right: 0.15625rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 
@@ -2602,7 +2602,7 @@ meta.foundation-mq-topbar {
 /* line 118, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .contain-to-grid {
   width: 100%;
-  background: #333333;
+  background: #FFFFFF;
 }
 /* line 122, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .contain-to-grid .top-bar {
@@ -2642,7 +2642,7 @@ meta.foundation-mq-topbar {
   height: 3.4375rem;
   line-height: 3.4375rem;
   position: relative;
-  background: #333333;
+  background: #FFFFFF;
   margin-bottom: 0;
 }
 /* line 161, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -2759,7 +2759,7 @@ meta.foundation-mq-topbar {
 }
 /* line 274, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .title-area {
-  background: #333333;
+  background: #FFFFFF;
 }
 /* line 277, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .toggle-topbar a {
@@ -2789,7 +2789,7 @@ meta.foundation-mq-topbar {
 /* line 306, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-top: solid 1px #1a1a1a;
+  border-top: solid 1px gray;
   clear: both;
   height: 1px;
   width: 100%;
@@ -2959,7 +2959,7 @@ meta.foundation-mq-topbar {
 /* line 352, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li:hover:not(.has-form) > a {
   background-color: #555555;
-  background: #333333;
+  background: #FFFFFF;
   color: #FFFFFF;
 }
 /* line 361, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -3083,7 +3083,7 @@ meta.foundation-mq-topbar {
 @media only screen and (min-width: 40.063em) {
   /* line 455, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar {
-    background: #333333;
+    background: #FFFFFF;
     overflow: visible;
   }
   /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -3118,7 +3118,7 @@ meta.foundation-mq-topbar {
   }
   /* line 474, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar.expanded {
-    background: #333333;
+    background: #FFFFFF;
   }
 
   /* line 477, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -3150,19 +3150,19 @@ meta.foundation-mq-topbar {
   /* line 500, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.hover > a:not(.button) {
     background-color: #555555;
-    background: #333333;
+    background: #FFFFFF;
     color: #FFFFFF;
   }
   /* line 509, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 1.14583rem;
     line-height: 3.4375rem;
-    background: #333333;
+    background: #FFFFFF;
   }
   /* line 513, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
     background-color: #555555;
-    background: #333333;
+    background: #FFFFFF;
   }
   /* line 522, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
@@ -3274,14 +3274,14 @@ meta.foundation-mq-topbar {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
-    border-right: solid 1px #4e4e4e;
+    border-right: solid 1px white;
     clear: none;
     height: 3.4375rem;
     width: 0;
   }
   /* line 631, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
-    background: #333333;
+    background: #FFFFFF;
     padding: 0 1.14583rem;
     height: 3.4375rem;
   }
@@ -3307,7 +3307,7 @@ meta.foundation-mq-topbar {
   /* line 661, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
-    background: #333333;
+    background: #FFFFFF;
     color: #FFFFFF;
   }
   /* line 670, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -4069,7 +4069,7 @@ blockquote p {
 /* line 293, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .tab-bar {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: #FFFFFF;
   color: #FFFFFF;
   height: 3.4375rem;
   line-height: 3.4375rem;
@@ -4093,7 +4093,7 @@ blockquote p {
   height: 3.4375rem;
   position: absolute;
   top: 0;
-  border-right: solid 1px #1a1a1a;
+  border-right: solid 1px gray;
   left: 0;
 }
 
@@ -4103,7 +4103,7 @@ blockquote p {
   height: 3.4375rem;
   position: absolute;
   top: 0;
-  border-left: solid 1px #1a1a1a;
+  border-left: solid 1px gray;
   right: 0;
 }
 
@@ -4178,7 +4178,7 @@ blockquote p {
   position: absolute;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #333333;
+  background: #FFFFFF;
   z-index: 1001;
   box-sizing: content-box;
   transition: transform 500ms ease 0s;
@@ -4206,7 +4206,7 @@ blockquote p {
   position: absolute;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #333333;
+  background: #FFFFFF;
   z-index: 1001;
   box-sizing: content-box;
   transition: transform 500ms ease 0s;
@@ -4249,12 +4249,12 @@ ul.off-canvas-list li a {
   display: block;
   padding: 0.66667rem;
   color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid #262626;
+  border-bottom: 0px solid #bfbfbf;
   transition: background 300ms ease;
 }
 /* line 249, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 ul.off-canvas-list li a:hover {
-  background: #242424;
+  background: #b3b3b3;
 }
 
 /* line 335, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
@@ -4271,7 +4271,7 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 0 4px rgba(255, 255, 255, 0.5), 4px 0 4px rgba(255, 255, 255, 0.5);
   display: block;
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
@@ -4303,7 +4303,7 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 0 4px rgba(255, 255, 255, 0.5), 4px 0 4px rgba(255, 255, 255, 0.5);
   display: block;
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
@@ -4335,7 +4335,7 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 0 4px rgba(255, 255, 255, 0.5), 4px 0 4px rgba(255, 255, 255, 0.5);
   display: block;
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
@@ -4367,7 +4367,7 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 0 4px rgba(255, 255, 255, 0.5), 4px 0 4px rgba(255, 255, 255, 0.5);
   display: block;
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
@@ -4399,7 +4399,7 @@ ul.off-canvas-list li a:hover {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.5), 4px 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 0 4px rgba(255, 255, 255, 0.5), 4px 0 4px rgba(255, 255, 255, 0.5);
   display: block;
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
@@ -4444,7 +4444,7 @@ ul.off-canvas-list li a:hover {
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #333333;
+  background: #FFFFFF;
   z-index: 1002;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -4508,7 +4508,7 @@ ul.off-canvas-list li a:hover {
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  background: #333333;
+  background: #FFFFFF;
   z-index: 1002;
   box-sizing: content-box;
   -webkit-overflow-scrolling: touch;
@@ -5099,13 +5099,9 @@ th.hide-for-touch {
   }
 }
 /* CSS Document */
-/* line 36, ../scss/_local_css.scss */
-body {
-  background-color: #fff;
-}
-
-/* line 40, ../scss/_local_css.scss */
+/* line 49, ../scss/_local_css.scss */
 header {
+  width: 100%;
   position: fixed;
   height: 3.4375rem;
   top: 0px;
@@ -5114,12 +5110,12 @@ header {
   background-color: #fff;
 }
 @media screen and (max-width: 767px) {
-  /* line 40, ../scss/_local_css.scss */
+  /* line 49, ../scss/_local_css.scss */
   header {
     height: 3.4375rem;
   }
 }
-/* line 50, ../scss/_local_css.scss */
+/* line 60, ../scss/_local_css.scss */
 header .logo {
   position: fixed;
   top: 0;
@@ -5130,7 +5126,7 @@ header .logo {
   height: 85px;
 }
 @media screen and (max-width: 849px) and (min-width: 768px) {
-  /* line 50, ../scss/_local_css.scss */
+  /* line 60, ../scss/_local_css.scss */
   header .logo {
     padding: 0.75rem 0 0 0.625rem;
     width: 132px;
@@ -5138,39 +5134,109 @@ header .logo {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 50, ../scss/_local_css.scss */
+  /* line 60, ../scss/_local_css.scss */
   header .logo {
     padding: 0.75rem 0 0 0.625rem;
     width: 132px;
     height: 69px;
   }
 }
-/* line 75, ../scss/_local_css.scss */
+/* line 79, ../scss/_local_css.scss */
+header nav.top-bar {
+  background-color: #fff;
+}
+/* line 85, ../scss/_local_css.scss */
+header nav.top-bar .top-bar-section ul li a {
+  font-family: 'ComeniaSansCondRegular';
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #000;
+}
+/* line 90, ../scss/_local_css.scss */
+header nav.top-bar .top-bar-section ul li a:hover {
+  color: #666;
+}
+/* line 99, ../scss/_local_css.scss */
+header .right-off-canvas-menu ul li a {
+  font-family: 'ComeniaSansCondRegular';
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #000;
+  margin: 10px;
+}
+/* line 104, ../scss/_local_css.scss */
+header .right-off-canvas-menu ul li a:hover {
+  color: #666;
+}
+/* line 117, ../scss/_local_css.scss */
 header .tab-bar .menu-icon {
   height: 3.4375rem;
 }
 
-/* line 83, ../scss/_local_css.scss */
+/* line 125, ../scss/_local_css.scss */
 .off-canvas-menu-height {
   height: 2000px;
 }
 
-/* line 88, ../scss/_local_css.scss */
+/* line 130, ../scss/_local_css.scss */
 .navArrows {
-  background-color: #eee;
+  background-image: url("http://www.brooklyn.cuny.edu/web/sup_foundation/diagonals.png");
+  background-repeat: repeat;
+  height: 71px;
   text-align: center;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 767px) {
+  /* line 130, ../scss/_local_css.scss */
+  .navArrows {
+    display: none;
+  }
+}
+/* line 141, ../scss/_local_css.scss */
+.navArrows .arrowDown {
+  display: inline-block;
+  background: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png") no-repeat 0px 0px;
+  width: 52px;
+  height: 26px;
+  margin: 1.375rem 0.6875rem 0 0.6875rem;
+}
+/* line 147, ../scss/_local_css.scss */
+.navArrows .arrowDown:hover {
+  background: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png") no-repeat -142px 0px;
+}
+/* line 151, ../scss/_local_css.scss */
+.navArrows .arrowUp {
+  display: inline-block;
+  background: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png") no-repeat -67px 0px;
+  width: 52px;
+  height: 26px;
+  margin: 1.375rem 0.6875rem 0 0.6875rem;
+}
+/* line 157, ../scss/_local_css.scss */
+.navArrows .arrowUp:hover {
+  background: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png") no-repeat -199px 0px;
+}
 
-/* line 95, ../scss/_local_css.scss */
+/* line 163, ../scss/_local_css.scss */
+.anchor {
+  position: relative;
+  display: block;
+  top: -78px;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+/* line 172, ../scss/_local_css.scss */
 .full-width {
   width: 100%;
   /*height: 100%;*/
   box-sizing: border-box;
   background-color: #eee;
 }
-/* line 100, ../scss/_local_css.scss */
+/* line 177, ../scss/_local_css.scss */
 .full-width.depth {
   /*background-image: url("http://charlesleonthompson.com/wp-content/uploads/2014/12/IMG_3122-1024x1280.jpg");
 
@@ -5196,7 +5262,7 @@ header .tab-bar .menu-icon {
   margin-bottom: 0;
   */
 }
-/* line 125, ../scss/_local_css.scss */
+/* line 202, ../scss/_local_css.scss */
 .full-width.depth img {
   display: block;
   margin-left: auto;
@@ -5204,20 +5270,20 @@ header .tab-bar .menu-icon {
   z-index: -1;
 }
 @media screen and (max-width: 849px) and (min-width: 768px) {
-  /* line 125, ../scss/_local_css.scss */
+  /* line 202, ../scss/_local_css.scss */
   .full-width.depth img {
     max-width: 1080px;
     height: auto;
   }
 }
-/* line 135, ../scss/_local_css.scss */
+/* line 212, ../scss/_local_css.scss */
 .full-width.depth section {
   position: absolute;
   top: 0;
   left: 0%;
   right: 0%;
 }
-/* line 141, ../scss/_local_css.scss */
+/* line 218, ../scss/_local_css.scss */
 .full-width.depth .in {
   position: absolute;
   margin-left: auto;
@@ -5228,42 +5294,54 @@ header .tab-bar .menu-icon {
   top: 150px;
 }
 
-/* line 153, ../scss/_local_css.scss */
-header, footer {
-  width: 100%;
-}
-
-/* line 158, ../scss/_local_css.scss */
+/* line 230, ../scss/_local_css.scss */
 .content {
   margin-top: 50px;
 }
-/* line 161, ../scss/_local_css.scss */
-.content .sectionObject {
-  width: 100%;
+/* line 232, ../scss/_local_css.scss */
+.content .rowInside {
+  padding: 0px 75px 0px 75px;
 }
-/* line 164, ../scss/_local_css.scss */
-.content .sectionObject .contentElements {
+/* line 235, ../scss/_local_css.scss */
+.content .sectionGray {
+  background-color: #eee;
+  border-right: 2px solid #eee;
+  padding: 1.25rem;
+}
+/* line 241, ../scss/_local_css.scss */
+.content .sectionObject .sectionHeaderLine {
   border-top: 1px solid #666;
+  margin: 0.625rem 0.625rem 0.625rem 0.625rem;
 }
-/* line 167, ../scss/_local_css.scss */
+/* line 245, ../scss/_local_css.scss */
+.content .sectionObject .contentElements {
+  margin: 0 0.625rem 0 0.625rem;
+  padding: 0 0.625rem 1.875rem 0.625rem;
+}
+/* line 249, ../scss/_local_css.scss */
+.content .sectionObject img {
+  float: left;
+  margin: 0 1.25rem 0 0.625rem;
+}
+/* line 253, ../scss/_local_css.scss */
 .content .sectionObject h1 {
   font-family: 'ComeniaSansCondRegular';
   font-size: 2.25rem;
   color: #781a42;
 }
-/* line 172, ../scss/_local_css.scss */
+/* line 258, ../scss/_local_css.scss */
 .content .sectionObject h2 {
   font-size: 1.125rem;
   font-family: 'ComeniaSansCondRegular';
   color: #444;
   padding: 0 0 0.4375rem 0;
 }
-/* line 177, ../scss/_local_css.scss */
+/* line 263, ../scss/_local_css.scss */
 .content .sectionObject h2.objectHeader {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 182, ../scss/_local_css.scss */
+/* line 268, ../scss/_local_css.scss */
 .content .sectionObject h3, .content .sectionObject h4, .content .sectionObject h5, .content .sectionObject h6 {
   font-size: 1rem;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
@@ -5272,7 +5350,7 @@ header, footer {
   line-height: 18px;
   margin: 0 0 0 0;
 }
-/* line 190, ../scss/_local_css.scss */
+/* line 276, ../scss/_local_css.scss */
 .content .sectionObject p {
   font-size: 0.8125rem;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
@@ -5281,20 +5359,28 @@ header, footer {
   line-height: 16px;
   margin: 0;
 }
-/* line 198, ../scss/_local_css.scss */
+/* line 284, ../scss/_local_css.scss */
 .content .sectionObject a {
   color: #781a42;
   font-weight: bold;
 }
-/* line 201, ../scss/_local_css.scss */
+/* line 287, ../scss/_local_css.scss */
 .content .sectionObject a:hover {
   color: #666;
 }
-/* line 205, ../scss/_local_css.scss */
+/* line 291, ../scss/_local_css.scss */
 .content .sectionObject strong {
   font-weight: bold;
 }
-/* line 208, ../scss/_local_css.scss */
+/* line 294, ../scss/_local_css.scss */
 .content .sectionObject em {
   font-style: italic;
+}
+
+/* line 300, ../scss/_local_css.scss */
+footer {
+  width: 100%;
+  border-top: 8px solid #781a42;
+  background-image: url("http://www.brooklyn.cuny.edu/web/sup_foundation/diagonals.png");
+  background-repeat: repeat;
 }

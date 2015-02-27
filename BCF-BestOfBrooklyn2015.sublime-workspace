@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-image"
+			],
+			[
 				"color",
 				"color-grayeee"
 			],
@@ -142,10 +146,6 @@
 			[
 				"di",
 				"DIV	Tag"
-			],
-			[
-				"back",
-				"background-color"
 			]
 		]
 	},
@@ -155,7 +155,7 @@
 			"file": "css/bob.css",
 			"settings":
 			{
-				"buffer_size": 185044,
+				"buffer_size": 187486,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,7 +171,7 @@
 			"file": "scss/_local_css.scss",
 			"settings":
 			{
-				"buffer_size": 4510,
+				"buffer_size": 6840,
 				"line_ending": "Windows"
 			}
 		},
@@ -179,7 +179,7 @@
 			"file": "working.html",
 			"settings":
 			{
-				"buffer_size": 6334,
+				"buffer_size": 12361,
 				"line_ending": "Windows"
 			}
 		},
@@ -187,7 +187,7 @@
 			"file": "scss/_settings.scss",
 			"settings":
 			{
-				"buffer_size": 50197,
+				"buffer_size": 50185,
 				"line_ending": "Windows"
 			}
 		}
@@ -411,6 +411,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"off-canvas",
+			"\" class=\"anchor\"",
 			".off-canvas-wrap",
 			"34. Top Bar",
 			"Top Bar Variables",
@@ -536,9 +538,7 @@
 			"/build/",
 			"\"/faq\"",
 			"\"/contact-us\"",
-			"\"/about\"",
-			"\"/facilities\"",
-			"\"/academics\""
+			"\"/about\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -546,6 +546,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\"",
 			"",
 			"http://www.brooklyn.cuny.edu/web/academics/schools/mediaarts/schools/feirstein.php",
 			"http://www.brooklyn.cuny.edu/web/academics/schools/mediaarts/schools/feirstein/",
@@ -672,8 +673,7 @@
 			"http://www.brooklyn.cuny.edu/web/feirsteinbeta/feirstein/build/",
 			"\"http://www.brooklyn.cuny.edu/web/feirsteinbeta/feirstein/faq.php\"",
 			"\"http://www.brooklyn.cuny.edu/web/feirsteinbeta/feirstein/contact-us.php\"",
-			"\"http://www.brooklyn.cuny.edu/web/feirsteinbeta/feirstein/about.php\"",
-			"\"http://www.brooklyn.cuny.edu/web/feirsteinbeta/feirstein/facilities.php\""
+			"\"http://www.brooklyn.cuny.edu/web/feirsteinbeta/feirstein/about.php\""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -692,15 +692,15 @@
 					"file": "css/bob.css",
 					"settings":
 					{
-						"buffer_size": 185044,
+						"buffer_size": 187486,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								129491,
-								129513
+								0,
+								0
 							]
 						],
 						"settings":
@@ -710,7 +710,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 78380.0,
+						"translation.y": 76853.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -746,15 +746,15 @@
 					"file": "scss/_local_css.scss",
 					"settings":
 					{
-						"buffer_size": 4510,
+						"buffer_size": 6840,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3458,
-								3474
+								6831,
+								6831
 							]
 						],
 						"settings":
@@ -764,7 +764,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2093.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -774,15 +774,15 @@
 					"file": "working.html",
 					"settings":
 					{
-						"buffer_size": 6334,
+						"buffer_size": 12361,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5168,
-								5082
+								2603,
+								2610
 							]
 						],
 						"settings":
@@ -791,7 +791,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1853.0,
+						"translation.y": 757.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -801,15 +801,15 @@
 					"file": "scss/_settings.scss",
 					"settings":
 					{
-						"buffer_size": 50197,
+						"buffer_size": 50185,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								27374,
-								27374
+								29863,
+								29863
 							]
 						],
 						"settings":
@@ -817,7 +817,7 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 11954.0,
+						"translation.y": 12495.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -884,7 +884,7 @@
 		[
 			[
 				"",
-				"/Z/Public/$$$Feirstein/Development/004/feirstein/Feirstein.sublime-project"
+				"/Z/Public/$BCF_Website/Development/003-Production5/bcf.sublime-project"
 			]
 		],
 		"width": 380.0
