@@ -56,48 +56,48 @@
  <body data-responsejs='{"create" : {"mode" : "src", "prefix" : "src"}}'>
 
 	<!-- Header -->
-	<header>
-		<div class="">
-			<section class="row">
+	<header class="hide-for-medium hide-for-small">
+			<!-- full Desktop menu -->
+			<section class="row ">
+				<!-- logo -->
 				<a href="#"><img class="logo" src="images/BCFlogo_163x85.png"></a>
-				<!--<div class="large-4 medium-4 small-11 logo">
-					<p>logo</p>
-				</div>
-				<nav class="large-8 medium-8 small-1">-->
-					
-					<!-- full menu -->
-					<nav class="top-bar docs-bar hide-for-medium hide-for-small" data-topbar>
+				<!-- menu -->
+				<nav class="top-bar docs-bar" data-topbar>
+					<section class="top-bar-section">
+					<ul class="right">
+					    <li><a href="#" class="">Gala Information</a></li>
+					    <li><a href="#" class="">Sponsorships</a></li>
+					    <li><a href="#" class="">Program & RSVP</a></li>
+					    <li><a href="#" class="">Directions</a></li>
+					    <li><a href="#" class="">past Galas</a></li>
+					  </ul>
+					</section>
+				</nav>		
+			</section>
+			<!-- end Desktop menu -->
+	</header>
+			
+	<header class="hide-for-large-up">
 
+			<!-- Mobile menu -->
+			<section class="row">
+				<!-- logo -->
+				<a href="#"><img class="logo" src="images/BCFlogo_163x85.png"></a>
+				<!-- menu -->
+				<div class="off-canvas-wrap docs-wrap" data-offcanvas>
+					<div class="inner-wrap">
+					    <nav class="tab-bar ">
+						    <!--<div class="left">
+								<a href="#"><img class="logo" src="images/BCFlogo_163x85.png"></a>
+							</div>-->
 
-					  <section class="top-bar-section">
-					    <ul class="right">
-					      <li><a href="#" class="">Gala Information</a></li>
-					      <li><a href="#" class="">Sponsorships</a></li>
-					      <li><a href="#" class="">Program & RSVP</a></li>
-					      <li><a href="#" class="">Directions</a></li>
-					      <li><a href="#" class="">past Galas</a></li>
-					    </ul>
-					  </section>
-					</nav>
-					<!-- end full menu -->
-				
-				<!-- mobile menu -->
-					<div class="off-canvas-wrap hide-for-large-up" data-offcanvas>
-					  <div class="inner-wrap">
-					    <nav class="tab-bar">
+					    <section class="right">
+					    	<a role="button" class="right-off-canvas-toggle menu-icon"><span></span></a>
+					    </section>
 
-					      <div class="left">
-						    <!--<a href="#"><img class="logo" src="images/BCFlogo_163x85.png"></a>-->
-						  </div>
-
-					      <section class="right">
-					        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-					      </section>
 					    </nav>
-
-
-
-					    <aside class="right-off-canvas-menu">
+						
+						<aside class="right-off-canvas-menu">
 						  <ul class="off-canvas-list">
 					      <li><a href="#" class="">Gala Information</a></li>
 					      <li><a href="#" class="">Sponsorships</a></li>
@@ -107,25 +107,20 @@
 						  </ul>
 						</aside>
 
-					    <section class="main-section">
-					      <!-- content goes here -->
-					      <div class="off-canvas-menu-height"></div>
-					    </section>
+						<section class="main-section">
+						    <!-- content goes here -->
+						   <div class="off-canvas-menu-height"></div>
+						</section>
 
-					  <a class="exit-off-canvas"></a>
+					   <a class="exit-off-canvas"></a>
 
 					  </div>
 					</div>
 					<!-- end mobile menu -->
 
-
-
-
-
-
 				<!--</nav>-->
 			</section>
-		</div>
+
 	</header>
 
 	<!-- Core Content Zone -->
@@ -133,17 +128,40 @@
 		<!-- base content row with text elements would go here -->
 
 		<span class="anchor" id="section0"></span>
-		<div class="full-width depth" >
+		<!-- <div class="full-width depth" >
 			<img src="images/IMG_3122-1024x1280.jpg">
 			<p class="out">outside the row</p>
 		    <section class="row">
 		      	<p class="in">inside the row</p>
 		    </section>
+		    <section class="row navArrows hide">
+                <div class="large-12 columns">
+                </div>
+            </section>
+            <section class="row bigArrow">
+            	<div class="arrowDown"></div>
+            </section>
+	
+  		</div>-->
+
+  		<span class="anchor" id="section0"></span>
+		<div class="" >
+		    <section class="row rowInside">
+		      	<img class="banner" src="images/IMG_3122-1024x1280.jpg">
+		    </section>
+		    <section class="row navArrows hide">
+                <div class="large-12 columns">
+                </div>
+            </section>
+            <section class="row bigArrow">
+            	<div class="arrowDown"></div>
+            </section>
   		</div>
+
 		<span class="anchor" id="section1"></span>
 		<div class="">
 			<section class="row rowInside">
-				<div class="large-7 medium-7 columns sectionGray">
+				<div class="large-7 medium-7 columns ">
 					<div class="sectionObject ">
 					<h2 class="objectHeader">Header</h2>
 					<div class="contentElements">
@@ -154,7 +172,22 @@
 					</div>
 					</div>
 				</div>
-				<div class="large-5 medium-5 columns sectionGray">
+				<div class="large-5 medium-5 columns ">
+					<div class="sectionObject ">
+					<h2 class="objectHeader">Header</h2>
+					<div class="contentElements">
+						<h3>Time:</h3>
+						<p>6:45 PM </p>
+						<h3>Location:</h3>
+						<p>The Rooftop</p>
+						<h3>Location:</h3>
+						<p>The Rooftop</p>
+					</div>
+					</div>
+				</div>
+			</section>
+			<section class="row rowInside sectionGray">
+				<div class="large-7 medium-7 columns ">
 					<div class="sectionObject ">
 					<h2 class="objectHeader">Header</h2>
 					<div class="contentElements">
@@ -165,10 +198,22 @@
 					</div>
 					</div>
 				</div>
-				
+				<div class="large-5 medium-5 columns ">
+					<div class="sectionObject ">
+					<h2 class="objectHeader">Header</h2>
+					<div class="contentElements">
+						<h3>Time:</h3>
+						<p>6:45 PM </p>
+						<h3>Location:</h3>
+						<p>The Rooftop</p>
+						<h3>Location:</h3>
+						<p>The Rooftop</p>
+					</div>
+					</div>
+				</div>
 			</section>
 			<section class="row navArrows"> 
-                <div class="large-12 columns">
+                <div class="columns">
                     <a href="#section2"><div class="arrowDown"></div></a>
                     <a href="#section0"><div class="arrowUp"></div></a>
                 </div>
@@ -312,85 +357,36 @@
                 </div>
             </section> 
 		</div>
-
-		<span class="anchor" id="section5"></span>
-		<div class="">
-			<section class="row">
-				<div class="large-7 medium-7 columns">
-					<div class="sectionObject">
-					<h2 class="objectHeader">Header</h2>
-					<div class="contentElements">
-						<h3>Time:</h3>
-						<p>6:45 PM </p>
-						<h3>Location:</h3>
-						<p>The Rooftop</p>
-					</div>
-					</div>
-				</div>
-				<div class="large-5 medium-5 columns">
-					<div class="sectionObject">
-					<h2 class="objectHeader">Header</h2>
-					<div class="contentElements">
-						<h3>Time:</h3>
-						<p>6:45 PM </p>
-						<h3>Location:</h3>
-						<p>The Rooftop</p>
-					</div>
-					</div>
-				</div>
-			</section>
-			 <section class="row navArrows"> 
-                <div class="large-12 columns">
-                    <!--<a href="#section4"><div class="arrowDown"></div></a>-->
-                    <a href="#section4"><div class="arrowUp"></div></a>
-                </div>
-            </section> 
-		</div>
-
-		<span class="anchor" id="section5"></span>
-		<div class="">
-			<section class="row">
-				<div class="large-7 medium-7 columns">
-					<div class="sectionObject">
-					<h2 class="objectHeader">Header</h2>
-					<div class="contentElements">
-						<h3>Time:</h3>
-						<p>6:45 PM </p>
-						<h3>Location:</h3>
-						<p>The Rooftop</p>
-					</div>
-					</div>
-				</div>
-				<div class="large-5 medium-5 columns">
-					<div class="sectionObject">
-					<h2 class="objectHeader">Header</h2>
-					<div class="contentElements">
-						<h3>Time:</h3>
-						<p>6:45 PM </p>
-						<h3>Location:</h3>
-						<p>The Rooftop</p>
-					</div>
-					</div>
-				</div>
-			</section>
-			 <section class="row navArrows"> 
-                <div class="large-12 columns">
-                    <!--<a href="#section4"><div class="arrowDown"></div></a>-->
-                    <a href="#section4"><div class="arrowUp"></div></a>
-                </div>
-            </section> 
-		</div>
 	
 	<!-- Footer -->
-	<footer>
-		<div class="">
-			<section class="row">
-				<div class="large-12">
-					<p>contains the footer CCs, full-width or not</p>
-				</div>
-			</section>
-		</div>
-	</footer>
+	<!-- Footer -->
+    <footer>
+        <div class="">
+            <section class="row">
+                <div class="large-12 medium-12 columns footerNav">
+                    <ul>
+                        <li><a href="#" class="">Gala Information</a></li>
+					      <li><a href="#" class="">Sponsorships</a></li>
+					      <li><a href="#" class="">Program & RSVP</a></li>
+					      <li><a href="#" class="">Directions</a></li>
+					      <li><a href="#" class="">past Galas</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="row">
+                <div class="large-12 medium-12 columns">
+<h2>The Brooklyn College Foundation</h2>
+<p>2900 Bedford Avenue<br />
+Brooklyn, NY 11210<br />
+Phone: 718.951.5074<br />
+Fax: 718.951.4248</p>
+<p>Visit the <a href="http://www.brooklyn.cuny.edu/web/support/foundation.php">Brooklyn College Foundation website</a></p>
+                    <p>&copy; <script>document.write(new Date().getFullYear())</script> The Brooklyn College Foundation</p>
+
+                </div>
+            </section>
+        </div>
+    </footer>
 
 	<!-- Footer Elements -->
 	<!-- js loads 
@@ -406,6 +402,19 @@
     <script>
     	$(document).foundation();
   	</script>
+
+  	<script>
+  		$(document).foundation({
+  			offcanvas : {
+			    // Sets method in which offcanvas opens.
+			    // [ move | overlap_single | overlap ]
+				open_method: 'overlap', 
+			    // Should the menu close when a menu link is clicked?
+			    // [ true | false ]
+			    close_on_click : true
+			  }
+			});
+  		</script>
 
 	<!-- End Footer Elements -->
   </body>
