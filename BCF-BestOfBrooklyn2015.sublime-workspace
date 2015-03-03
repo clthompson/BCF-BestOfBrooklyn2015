@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"color-",
+				"color-white"
+			],
+			[
 				"z",
 				"z-index"
 			],
@@ -66,10 +70,6 @@
 			[
 				"thin-gray",
 				"thin-grayLinus"
-			],
-			[
-				"color-",
-				"color-black"
 			],
 			[
 				"n",
@@ -159,7 +159,7 @@
 			"file": "css/bob.css",
 			"settings":
 			{
-				"buffer_size": 188240,
+				"buffer_size": 192800,
 				"line_ending": "Windows"
 			}
 		},
@@ -172,13 +172,10 @@
 			}
 		},
 		{
-			"contents": "@charset \"utf-8\";\n/* CSS Document */\n\n//\n// Custom Styles \n//\n\n// Media Query Starts\n// @media #{$Desktop} {}\n// @media #{$iPadPortrait} {}\n// @media #{$Phone} {}\n// @media #{$Five00} {} \n\n// Fonts Sizes - OVERRIDE\n  $h1-font-size: rem-calc(36); // $h1-font-size: rem-calc(44);  // not used yet\n  $h2-font-size: rem-calc(18); // $h2-font-size: rem-calc(37);  // 22\n  $h3-font-size: rem-calc(16); // $h3-font-size: rem-calc(27);  // 18\n  $h4-font-size: rem-calc(14); // $h4-font-size: rem-calc(23);  // not used yet\n  $h5-font-size: rem-calc(15); // $h5-font-size: rem-calc(18);  // not used yet\n  $h6-font-size: rem-calc(16); // $h6-font-size: 1rem;          // not used yet\n\n// Typical Paragraphs\n  $paragraph-font-size: rem-calc(13); // 15\n  $footer-font-size: rem-calc(10); //12\n\n// Backgrounds and Sprite Sheets\n  $background-d: url('http://www.brooklyn.cuny.edu/web/sup_foundation/diagonals.png');\n  $SpriteSheet: url('http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png');\n\n// Colors\n  $color-maroon: #781a42; //#7c2142 BCF\n  $color-black: #000;\n  $color-white: #fff;\n  $color-gray222: #222; // starting additional colors\n  $color-gray444: #444;\n  $color-gray555: #555;\n  $color-gray666: #666;\n  $color-grayccc: #ccc;\n  $color-grayeee: #eee;\n  $color-grayefe: #efefef;\n\n// Line Styles\n  $thick-maroon: 8px solid $color-maroon;\n  $thin-gray666: 1px solid $color-gray666;\n  $thin-grayccc: 1px solid $color-grayccc;\n\nbody {\n  background-color: $color-white;\n}\n\n .main-section {\n    //display: none;\n    //height: 300px;\n    //position: static;\n    //z-index: -20000;\n  }\n\nheader {\n  width: 100%;\n  height: rem-calc(55);\n  top:0px; \n  margin:auto; \n  position: fixed;\n  z-index: 1000;\n  background-color: #fff;\n  @media #{$Phone} {\n    height: rem-calc(55); // 45\n  }\n\n  .logo {\n    position:fixed;\n    top:0;\n    z-index: 2;\n    overflow: visible;\n    padding: rem-calc(15) 0 0 rem-calc(20);\n    width: 163px;\n    height: 85px;\n    @media #{$iPadPortrait} {\n      padding: rem-calc(12) 0 0 rem-calc(10);\n      width: 132px;\n      height: 69px;\n    }\n    @media #{$Phone} {\n      padding: rem-calc(12) 0 0 rem-calc(10); // 5 5\n      width: 132px; // 107\n      height: 69px; // 56\n    }\n  }\n  nav.top-bar {\n    background-color: $color-white;\n    .top-bar-section {\n      //background-color: $color-white;\n      ul {\n        //background-color: $color-white;\n        li a {\n          font-family: 'ComeniaSansCondRegular';\n          text-transform: uppercase;\n          font-size: $h4-font-size;\n          color: $color-black;\n          &:hover {\n            color: $color-gray666;\n          }\n        }\n      }\n    }\n  }\n  .right-off-canvas-menu {\n    //height: 300px;\n    //z-index: 20;\n    //background-color: $color-white;\n    ul li a {\n      font-family: 'ComeniaSansCondRegular';\n      text-transform: uppercase;\n      font-size: $h4-font-size;\n      color: $color-black;\n      &:hover {\n        color: $color-gray666;\n      }\n      margin: 10px;\n    }\n  }\n    //.right-off-canvas-menu ul, li a \n    //.off-canvas-wrap {\n    //  height: rem-calc(55);\n    //  @media #{$Phone} {\n    //    height: rem-calc(45);\n    //  }\n    //}\n  .tab-bar .menu-icon {\n    height: rem-calc(55);\n    //@media #{$Phone} {\n    //  height: rem-calc(45);\n    //}\n  }\n}\n\n.off-canvas-menu-height {\n   height: 300px; // what is the optimum depth?\n  // background-color: $color-white;\n}\n\n\n\n.anchor {\n  position: relative;\n  display: block;\n  top: -78px;\n  height: 0;\n  width: 0;\n  visibility: hidden;\n}\n\n.full-width {\n  width: 100%;\n  /*height: 100%;*/\n  box-sizing: border-box;\n  background-color: $color-grayeee;\n  &.depth {\n    /*background-image: url(\"http://charlesleonthompson.com/wp-content/uploads/2014/12/IMG_3122-1024x1280.jpg\");\n  \n    position: relative;\n    width: 100%;\n    height: 60%;\n    background-position: center center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    padding: 0 2.5%;\n    overflow: hidden;\n    background-position: center center;\n    background-size: cover;\n    background-repeat: no-repeat;\n    */\n    \n    width: 100%;\n    height: 350px;\n    position: relative;\n    /*padding-top: 1.875rem;*/\n    overflow: hidden;\n    /*\n    \n    margin-bottom: 0;\n    */\n    img {\n      display: block;\n      margin-left: auto;\n      margin-right: auto;\n      z-index: -1;\n      @media #{$iPadPortrait} { //needs work!\n        max-width:1080px;\n        height:auto;\n      }\n    }\n    section {\n      position: absolute;\n      top:0;\n      left:0%;\n      right:0%;\n    }\n    .in {\n      position: absolute;\n      margin-left: auto;\n      margin-right: auto;\n      z-index: 2;\n      padding-right: 10px;\n      right:0px;\n      top: 150px;\n    }\n  }\n}\n\n.content {\n  margin-top: 50px;\n  .rowInside {\n    padding: 30px 75px 30px 75px;\n    //border-left: 75px solid $color-white;\n    //border-right: 75px solid $color-white;\n    .sectionObject {\n      //border: 1px solid #000;\n      padding: 0px 30px 0px 30px;\n      .sectionHeaderLine {\n        border-top: $thin-grayccc;\n        margin: 0 rem-calc(0) rem-calc(20) rem-calc(0);\n      }\n      .contentElements {\n        //border: 1px solid #000;\n        margin: 0 rem-calc(0) 0 rem-calc(0);\n        padding: 0 rem-calc(10) 0 rem-calc(10);\n      }\n      img {\n        float: left;\n        margin: 0 rem-calc(20) 0 rem-calc(20);\n      }\n      h1 {\n        font-family: 'ComeniaSansCondBold';\n        font-size: $h1-font-size;\n        color: $color-maroon;\n      }\n      h2 {\n        font-size: $h2-font-size;\n        font-family: 'ComeniaSansCondBold';\n        color: $color-gray444;\n        padding: 0 0 rem-calc(0) 0;\n        &.objectHeader {\n          text-transform: uppercase;\n          text-align: center;\n          margin: 0;\n          padding: 0;\n        }\n      }\n      h3, h4, h5, h6 {\n        font-size: $h3-font-size;\n        font-family: $font-lucida-Demibold;\n        color: $color-black;\n        padding: 0 0 0 0;\n        line-height: 10px; //22\n        margin: 0 0 0 0;\n      }\n      p {\n        font-size: $paragraph-font-size;\n        font-family: $font-lucida;\n        color: $color-gray;\n        padding: rem-calc(8) 0 rem-calc(23) 0;\n        line-height: 16px; //19\n        margin: 0;\n        &:last-of-type {\n          padding-bottom: 0;\n        }\n      }\n      strong {\n        font-weight: $bold;\n      }\n      em {\n        font-style: $italic;\n      }\n    }\n    img {\n        float: left;\n        margin-right: 0;\n      }\n    &.sectionGray {\n      background-color: $color-grayeee;\n      padding: 30px 0px 30px 0px;\n      border-left: 75px solid $color-white;\n      border-right: 75px solid $color-white;\n      //padding: rem-calc(40) rem-calc(10) rem-calc(40) rem-calc(10);\n      .sectionObject {\n        //border: 1px solid #000;\n        //padding: 0;\n        .sectionHeaderLine {\n          //border-top: $thin-grayccc;\n          //margin: 0 rem-calc(22) rem-calc(20) rem-calc(22);\n        }\n        .contentElements{\n          //padding: 0 rem-calc(30) 0 rem-calc(30);\n          //border: 1px solid #000;\n        }\n      }\n      img {\n        margin: 0 rem-calc(20) 0 rem-calc(10);\n      }\n    }\n  }\n  .navArrows {\n    background-image: $background-d;\n    background-repeat: repeat;\n    height: 71px;\n    text-align: center;\n    margin-top: rem-calc(50);\n    margin-bottom: rem-calc(60);\n    margin-left: auto;\n    margin-right: auto;\n    @media #{$Phone} {\n      display: none;\n    }\n    .arrowDown {\n      display: inline-block;\n      background: $SpriteSheet no-repeat 0px 0px;\n      width: 52px;\n      height: 26px;\n      margin: rem-calc(22) rem-calc(11) 0 rem-calc(11);\n      &:hover {\n        background: $SpriteSheet no-repeat -142px 0px;\n      }\n    }\n    .arrowUp {\n      display: inline-block;\n      background: $SpriteSheet no-repeat -67px 0px;\n      width: 52px;\n      height: 26px;\n      margin: rem-calc(22) rem-calc(11) 0 rem-calc(11);\n      &:hover {\n        background: $SpriteSheet no-repeat -199px 0px;\n      }\n    }\n  } \n}\n\n.contentElements a, footer a {\n  color: $color-maroon;\n  font-weight: $bold;\n  &:hover {\n    color: $color-gray666;\n  }\n}\n\nfooter {\n  width: 100%;\n  border-top: $thick-maroon;\n  background-image: $background-d;\n  background-repeat: repeat;\n  ul li {\n    \n  }\n  h2 {\n    font-size: $h5-font-size;\n    font-family: 'ComeniaSansCondBold';\n    text-transform: uppercase;\n    color: $color-gray555;\n  }\n  p {\n    font-size: $footer-font-size;\n    font-family: $font-lucida;\n    color: $color-gray555;\n  }\n}",
 			"file": "scss/_local_css.scss",
-			"file_size": 8807,
-			"file_write_time": 130698006495928750,
 			"settings":
 			{
-				"buffer_size": 8465,
+				"buffer_size": 12396,
 				"line_ending": "Windows"
 			}
 		},
@@ -186,7 +183,7 @@
 			"file": "working.html",
 			"settings":
 			{
-				"buffer_size": 11504,
+				"buffer_size": 18844,
 				"line_ending": "Windows"
 			}
 		},
@@ -279,6 +276,10 @@
 	},
 	"file_history":
 	[
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/scss/_local_var.scss",
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/splash.html",
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/splashw.html",
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/working.html",
 		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/bower_components/foundation/scss/foundation/components/_offcanvas.scss",
 		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/bower_components/foundation/js/foundation/foundation.offcanvas.js",
 		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/diagram.html",
@@ -402,11 +403,7 @@
 		"/Z/Public/$BCF_Website/Development/003-Production5/demo.html",
 		"/Z/Public/$BCF_Website/Development/003-Production5/css/slimmenu.css",
 		"/Z/Public/$BCF_Website/Development/003-Production5/articleBuild.html",
-		"/Z/Public/$BCF_Website/$Admin/Diagrams/desktopLayout.html",
-		"/Z/Public/$BCF_Website/$Admin/Diagrams/desktopArticleWithImage.html",
-		"/Z/Public/$BCF_Website/Development/003-Production5/statsHighlights.html",
-		"/Z/Public/$BCF_Website/Development/003-Production5/sass/foundation/components/_buttons.scss",
-		"/Z/Public/$BCF_Website/Development/003-Production5/sass/_settings.scss"
+		"/Z/Public/$BCF_Website/$Admin/Diagrams/desktopLayout.html"
 	],
 	"find":
 	{
@@ -707,7 +704,7 @@
 					"file": "css/bob.css",
 					"settings":
 					{
-						"buffer_size": 188240,
+						"buffer_size": 192800,
 						"regions":
 						{
 						},
@@ -725,7 +722,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 79268.0,
+						"translation.y": 76276.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -761,15 +758,15 @@
 					"file": "scss/_local_css.scss",
 					"settings":
 					{
-						"buffer_size": 8465,
+						"buffer_size": 12396,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8218,
-								8218
+								5537,
+								5537
 							]
 						],
 						"settings":
@@ -779,7 +776,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4448.0,
+						"translation.y": 6334.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -789,24 +786,23 @@
 					"file": "working.html",
 					"settings":
 					{
-						"buffer_size": 11504,
+						"buffer_size": 18844,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6095,
-								6095
+								16576,
+								16576
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2067.0,
+						"translation.y": 6653.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -833,7 +829,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5703.0,
+						"translation.y": 843.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -859,7 +855,7 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 12202.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -926,7 +922,7 @@
 		[
 			[
 				"",
-				"/Z/Public/$BCF_Website/Development/003-Production5/bcf.sublime-project"
+				"/Z/Public/webDevelopment/master/MASTER.sublime-project"
 			]
 		],
 		"width": 380.0

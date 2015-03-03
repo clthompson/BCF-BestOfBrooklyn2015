@@ -6,10 +6,15 @@
 //
 
 // Media Query Starts
-// @media #{$Desktop} {}
-// @media #{$iPadPortrait} {}
+// @media #{$Five00} {}
 // @media #{$Phone} {}
-// @media #{$Five00} {} 
+// @media #{$iPadPortrait} {} 
+// @media #{$Desktop} {}
+
+// @media #{$Small} {}
+// @media #{$Medium} {}
+// @media #{$Large} {}
+// @media #{$xLarge} {}
 
 // Fonts Sizes - OVERRIDE
   $h1-font-size: rem-calc(36); // $h1-font-size: rem-calc(44);  // not used yet
@@ -29,6 +34,7 @@
 
 // Colors
   $color-maroon: #781a42; //#7c2142 BCF
+  $color-maroon2: #5d0d2f;
   $color-black: #000;
   $color-white: #fff;
   $color-gray222: #222; // starting additional colors
@@ -43,6 +49,7 @@
   $thick-maroon: 8px solid $color-maroon;
   $thin-gray666: 1px solid $color-gray666;
   $thin-grayccc: 1px solid $color-grayccc;
+  $thin-maroon2: 2px solid $color-maroon2;
 
 body {
   background-color: $color-white;
@@ -63,7 +70,7 @@ header {
   position: fixed;
   z-index: 1000;
   background-color: #fff;
-  @media #{$Phone} {
+  @media #{$Medium} {
     height: rem-calc(55); // 45
   }
 
@@ -75,12 +82,12 @@ header {
     padding: rem-calc(15) 0 0 rem-calc(20);
     width: 163px;
     height: 85px;
-    @media #{$iPadPortrait} {
+    @media #{$Medium} {
       padding: rem-calc(12) 0 0 rem-calc(10);
       width: 132px;
       height: 69px;
     }
-    @media #{$Phone} {
+    @media #{$Small} {
       padding: rem-calc(12) 0 0 rem-calc(10); // 5 5
       width: 132px; // 107
       height: 69px; // 56
@@ -216,12 +223,32 @@ header {
 .content {
   margin-top: 20px;
   .rowInside {
-    padding: 30px 75px 30px 75px;
+    //border: 1px solid #ccc;
+    padding: 0px 75px 30px 75px;
     //border-left: 75px solid $color-white;
     //border-right: 75px solid $color-white;
+    @media #{$Medium} {
+      padding: 0px 10px 30px 10px;
+    }
+    @media #{$Small} {
+      padding: 0px 0px 15px 0px;
+    } 
+    &.splash {
+      //border: 1px solid #000;
+      padding: 30px 0px 30px 0px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .sectionObject {
       //border: 1px solid #000;
       padding: 0px 30px 0px 30px;
+      @media #{$Medium} {
+        padding: 10px 10px 0px 10px;
+      }
+      @media #{$Small} {
+        padding: 10px 10px 10px 10px;
+      }
       .sectionHeaderLine {
         border-top: $thin-grayccc;
         margin: 0 rem-calc(0) rem-calc(20) rem-calc(0);
@@ -230,6 +257,63 @@ header {
         //border: 1px solid #000;
         margin: 0 rem-calc(0) 0 rem-calc(0);
         padding: 0 rem-calc(10) 0 rem-calc(10);
+        @media #{$Small} {
+          padding: 0px 0px 0px 0px;
+        }
+      }
+      .featureTop {
+        margin: 20px 10px 15px 10px;
+      }
+      .featureBottom {
+        margin: 20px 10px 0px 10px;
+      }
+      .icon {
+        //display: table;
+        //width: 100%;
+        height: 65px;
+        //margin: 20px 10px 0px 10px;
+        padding: 5px 0 15px 0;
+        &:last-of-type{
+          padding-bottom: 0px;
+        }
+        &.iconGray{
+          background-color: $color-grayeee;
+        }
+        img {
+          float: left;
+          //display: inline-block;
+          margin: 0 rem-calc(10) 0 rem-calc(10);
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        p {
+          //display: table-cell;
+          //vertical-align: middle;
+          position: relative;
+          top: 45%;
+          transform: translateY(-50%);
+          //margin-left: 75px;
+        }
+      }
+      .bobButton {
+        height: 55px;
+        background-color: $color-maroon;
+        border: $thin-maroon2;
+        //margin: 20px 10px 0px 10px;
+        padding: 10px 0 5px 0;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+          background-color: $color-maroon2;
+        }
+        p {
+          color: $color-white;
+          font-size: $h2-font-size;
+          font-family: 'ComeniaSansCondBold';
+          text-transform: uppercase;
+        }
       }
       img {
         float: left;
@@ -257,7 +341,7 @@ header {
         font-family: $font-lucida-Demibold;
         color: $color-black;
         padding: 0 0 0 0;
-        line-height: 10px; //22
+        line-height: 16px; //22
         margin: 0 0 0 0;
       }
       p {
@@ -279,14 +363,28 @@ header {
       }
     }
     img {
-        float: left;
-        margin-right: 0;
-      }
+      float: left;
+      margin-right: 0;
+    }
     &.sectionGray {
       background-color: $color-grayeee;
       padding: 30px 0px 30px 0px;
       border-left: 75px solid $color-white;
       border-right: 75px solid $color-white;
+      @media #{$Medium} {
+        padding: 0 0 30px 0;
+        border-left: 10px solid $color-white;
+        border-right: 10px solid $color-white;
+        h2 {
+          &.objectHeader {
+            padding-top: 30px;
+            @media #{$Medium} {
+              padding-top: 0px;
+            }
+          }
+        }
+      }
+
       //padding: rem-calc(40) rem-calc(10) rem-calc(40) rem-calc(10);
       .sectionObject {
         //border: 1px solid #000;
@@ -302,6 +400,14 @@ header {
       }
       img {
         margin: 0 rem-calc(20) 0 rem-calc(10);
+        @media #{$Small} {
+          display: block;
+          padding-bottom: 10px;
+          //border: 1px solid #000;
+          margin-left: auto;
+          margin-right: auto;
+          float: none;
+        }
       }
     }
   }
@@ -310,11 +416,11 @@ header {
     background-repeat: repeat;
     height: 71px;
     text-align: center;
-    margin-top: rem-calc(50);
-    margin-bottom: rem-calc(60);
+    margin-top: rem-calc(60);
+    margin-bottom: rem-calc(90);
     margin-left: auto;
     margin-right: auto;
-    @media #{$Phone} {
+    @media #{$Small} {
       display: none;
     }
     .arrowDown {
@@ -339,14 +445,15 @@ header {
     }
   }
   .bigArrow {
+    //border: 1px solid #000;
     //background-image: $background-d;
-    height: 80px;
+    height: 48px;
     text-align: center;
-    //margin-top: rem-calc(30);
-    //margin-bottom: rem-calc(60);
+    margin-top: rem-calc(0);
+    margin-bottom: rem-calc(30);
     margin-left: auto;
     margin-right: auto;
-    @media #{$Phone} {
+    @media #{$Small} {
       display: none;
     }
     .arrowDown {
@@ -354,23 +461,29 @@ header {
       background: $SpriteSheet no-repeat 0px -94px;
       width: 140px;
       height: 48px;
-      margin: rem-calc(22) rem-calc(11) 0 rem-calc(11);
+      //border: 1px solid #000;
+      margin: 0;
       //&:hover {
       //  background: $SpriteSheet no-repeat -142px 0px;
       //}
-      @media #{$iPadPortrait} {
-
+      @media #{$Medium} {
+        background: $SpriteSheet no-repeat 0px -52px;
+        width: 122px;
+        height: 40px;
+      }
+      @media #{$Small} {
+        display: none;
       }
     }
   }
   img.banner {
     width: 100%;
-    height: 80%;
+    height: 40%;
     overflow: hidden;
   }
 }
 
-.contentElements a, footer a {
+.sectionObject a, footer a {
   color: $color-maroon;
   font-weight: $bold;
   &:hover {
@@ -383,6 +496,10 @@ footer {
   border-top: $thick-maroon;
   background-image: $background-d;
   background-repeat: repeat;
+  padding-left: 20px;
+  @media #{$Medium} {
+    padding-left: 10px;
+  }
   .footerNav {
     text-align: center;
     margin-top: rem-calc(35);

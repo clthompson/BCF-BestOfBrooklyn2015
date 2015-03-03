@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-/* line 30, ../../../master/scss/_master_var.scss */
+/* line 35, ../../../master/scss/_master_var.scss */
 .exampleVar {
   font-family: Arial;
 }
@@ -152,11 +152,6 @@ article .article-additional .video-content iframe {
 }
 
 /* CSS Document */
-/* line 12, ../scss/_local_var.scss */
-.examplestyle {
-  weight: 12.5rem;
-}
-
 /* line 347, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.0/";
@@ -182,20 +177,20 @@ meta.foundation-mq-medium {
 
 /* line 366, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
+  font-family: "/only screen and (min-width:40.063em) and (max-width:53em)/";
   width: 40.063em;
 }
 
 /* line 371, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:64.063em)/";
-  width: 64.063em;
+  font-family: "/only screen and (min-width:53.063em)/";
+  width: 53.063em;
 }
 
 /* line 376, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-large-only {
-  font-family: "/only screen and (min-width:64.063em) and (max-width:90em)/";
-  width: 64.063em;
+  font-family: "/only screen and (min-width:53.063em) and (max-width:90em)/";
+  width: 53.063em;
 }
 
 /* line 381, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -1305,7 +1300,7 @@ select {
     left: auto;
   }
 }
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 53.063em) {
   /* line 159, ../bower_components/foundation/scss/foundation/components/_grid.scss */
   .large-push-0 {
     position: relative;
@@ -3398,7 +3393,7 @@ meta.foundation-mq-topbar {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+@media only screen and (min-width: 40.063em) and (max-width: 53em) {
   /* line 162, ../bower_components/foundation/scss/foundation/components/_type.scss */
   .medium-only-text-left {
     text-align: left !important;
@@ -3440,7 +3435,7 @@ meta.foundation-mq-topbar {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+@media only screen and (min-width: 53.063em) and (max-width: 90em) {
   /* line 162, ../bower_components/foundation/scss/foundation/components/_type.scss */
   .large-only-text-left {
     text-align: left !important;
@@ -3461,7 +3456,7 @@ meta.foundation-mq-topbar {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 53.063em) {
   /* line 162, ../bower_components/foundation/scss/foundation/components/_type.scss */
   .large-text-left {
     text-align: left !important;
@@ -3650,7 +3645,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 /* line 269, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 {
-  font-size: 11.875rem;
+  font-size: 1.625rem;
 }
 
 /* line 270, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -3900,7 +3895,7 @@ blockquote p {
 
   /* line 456, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h1 {
-    font-size: 12.5rem;
+    font-size: 2.25rem;
   }
 
   /* line 457, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -4687,7 +4682,7 @@ ul.off-canvas-list li a:hover {
   }
 }
 /* large displays */
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 53.063em) {
   /* line 244, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important;
@@ -5099,12 +5094,12 @@ th.hide-for-touch {
   }
 }
 /* CSS Document */
-/* line 47, ../scss/_local_css.scss */
+/* line 54, ../scss/_local_css.scss */
 body {
   background-color: #fff;
 }
 
-/* line 58, ../scss/_local_css.scss */
+/* line 65, ../scss/_local_css.scss */
 header {
   width: 100%;
   height: 3.4375rem;
@@ -5114,13 +5109,13 @@ header {
   z-index: 1000;
   background-color: #fff;
 }
-@media screen and (max-width: 767px) {
-  /* line 58, ../scss/_local_css.scss */
+@media screen and (max-width: 848px) {
+  /* line 65, ../scss/_local_css.scss */
   header {
     height: 3.4375rem;
   }
 }
-/* line 70, ../scss/_local_css.scss */
+/* line 77, ../scss/_local_css.scss */
 header .logo {
   position: fixed;
   top: 0;
@@ -5130,38 +5125,38 @@ header .logo {
   width: 163px;
   height: 85px;
 }
-@media screen and (max-width: 849px) and (min-width: 768px) {
-  /* line 70, ../scss/_local_css.scss */
+@media screen and (max-width: 848px) {
+  /* line 77, ../scss/_local_css.scss */
   header .logo {
     padding: 0.75rem 0 0 0.625rem;
     width: 132px;
     height: 69px;
   }
 }
-@media screen and (max-width: 767px) {
-  /* line 70, ../scss/_local_css.scss */
+@media screen and (max-width: 640px) {
+  /* line 77, ../scss/_local_css.scss */
   header .logo {
     padding: 0.75rem 0 0 0.625rem;
     width: 132px;
     height: 69px;
   }
 }
-/* line 89, ../scss/_local_css.scss */
+/* line 96, ../scss/_local_css.scss */
 header nav.top-bar {
   background-color: #fff;
 }
-/* line 95, ../scss/_local_css.scss */
+/* line 102, ../scss/_local_css.scss */
 header nav.top-bar .top-bar-section ul li a {
   font-family: 'ComeniaSansCondRegular';
   text-transform: uppercase;
   font-size: 0.875rem;
   color: #000;
 }
-/* line 100, ../scss/_local_css.scss */
+/* line 107, ../scss/_local_css.scss */
 header nav.top-bar .top-bar-section ul li a:hover {
   color: #666;
 }
-/* line 111, ../scss/_local_css.scss */
+/* line 118, ../scss/_local_css.scss */
 header .right-off-canvas-menu ul li a {
   font-family: 'ComeniaSansCondRegular';
   text-transform: uppercase;
@@ -5169,21 +5164,21 @@ header .right-off-canvas-menu ul li a {
   color: #000;
   margin: 10px;
 }
-/* line 116, ../scss/_local_css.scss */
+/* line 123, ../scss/_local_css.scss */
 header .right-off-canvas-menu ul li a:hover {
   color: #666;
 }
-/* line 129, ../scss/_local_css.scss */
+/* line 136, ../scss/_local_css.scss */
 header .tab-bar .menu-icon {
   height: 3.4375rem;
 }
 
-/* line 137, ../scss/_local_css.scss */
+/* line 144, ../scss/_local_css.scss */
 .off-canvas-menu-height {
   height: 300px;
 }
 
-/* line 144, ../scss/_local_css.scss */
+/* line 151, ../scss/_local_css.scss */
 .anchor {
   position: relative;
   display: block;
@@ -5230,7 +5225,7 @@ header .tab-bar .menu-icon {
       //margin-left: auto;
       //margin-right: auto;
       //z-index: -1;
-      @media screen and (max-width: 849px) and (min-width: 768px) { //needs work!
+      @media screen  and (max-width: 849px) { //needs work!
         max-width:1080px;
         height:auto;
       }
@@ -5253,63 +5248,156 @@ header .tab-bar .menu-icon {
 
   }
 }*/
-/* line 216, ../scss/_local_css.scss */
+/* line 223, ../scss/_local_css.scss */
 .content {
   margin-top: 20px;
 }
-/* line 218, ../scss/_local_css.scss */
+/* line 225, ../scss/_local_css.scss */
 .content .rowInside {
-  padding: 30px 75px 30px 75px;
+  padding: 0px 75px 30px 75px;
 }
-/* line 222, ../scss/_local_css.scss */
+@media screen and (max-width: 848px) {
+  /* line 225, ../scss/_local_css.scss */
+  .content .rowInside {
+    padding: 0px 10px 30px 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 225, ../scss/_local_css.scss */
+  .content .rowInside {
+    padding: 0px 0px 15px 0px;
+  }
+}
+/* line 236, ../scss/_local_css.scss */
+.content .rowInside.splash {
+  padding: 30px 0px 30px 0px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 243, ../scss/_local_css.scss */
 .content .rowInside .sectionObject {
   padding: 0px 30px 0px 30px;
 }
-/* line 225, ../scss/_local_css.scss */
+@media screen and (max-width: 848px) {
+  /* line 243, ../scss/_local_css.scss */
+  .content .rowInside .sectionObject {
+    padding: 10px 10px 0px 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 243, ../scss/_local_css.scss */
+  .content .rowInside .sectionObject {
+    padding: 10px 10px 10px 10px;
+  }
+}
+/* line 252, ../scss/_local_css.scss */
 .content .rowInside .sectionObject .sectionHeaderLine {
   border-top: 1px solid #ccc;
   margin: 0 0 1.25rem 0;
 }
-/* line 229, ../scss/_local_css.scss */
+/* line 256, ../scss/_local_css.scss */
 .content .rowInside .sectionObject .contentElements {
   margin: 0 0 0 0;
   padding: 0 0.625rem 0 0.625rem;
 }
-/* line 234, ../scss/_local_css.scss */
+@media screen and (max-width: 640px) {
+  /* line 256, ../scss/_local_css.scss */
+  .content .rowInside .sectionObject .contentElements {
+    padding: 0px 0px 0px 0px;
+  }
+}
+/* line 264, ../scss/_local_css.scss */
+.content .rowInside .sectionObject .featureTop {
+  margin: 20px 10px 15px 10px;
+}
+/* line 267, ../scss/_local_css.scss */
+.content .rowInside .sectionObject .featureBottom {
+  margin: 20px 10px 0px 10px;
+}
+/* line 270, ../scss/_local_css.scss */
+.content .rowInside .sectionObject .icon {
+  height: 65px;
+  padding: 5px 0 15px 0;
+}
+/* line 276, ../scss/_local_css.scss */
+.content .rowInside .sectionObject .icon:last-of-type {
+  padding-bottom: 0px;
+}
+/* line 279, ../scss/_local_css.scss */
+.content .rowInside .sectionObject .icon.iconGray {
+  background-color: #eee;
+}
+/* line 282, ../scss/_local_css.scss */
+.content .rowInside .sectionObject .icon img {
+  float: left;
+  margin: 0 0.625rem 0 0.625rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 290, ../scss/_local_css.scss */
+.content .rowInside .sectionObject .icon p {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+}
+/* line 299, ../scss/_local_css.scss */
+.content .rowInside .sectionObject .bobButton {
+  height: 55px;
+  background-color: #781a42;
+  border: 2px solid #5d0d2f;
+  padding: 10px 0 5px 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 308, ../scss/_local_css.scss */
+.content .rowInside .sectionObject .bobButton:hover {
+  background-color: #5d0d2f;
+}
+/* line 311, ../scss/_local_css.scss */
+.content .rowInside .sectionObject .bobButton p {
+  color: #fff;
+  font-size: 1.125rem;
+  font-family: 'ComeniaSansCondBold';
+  text-transform: uppercase;
+}
+/* line 318, ../scss/_local_css.scss */
 .content .rowInside .sectionObject img {
   float: left;
   margin: 0 1.25rem 0 1.25rem;
 }
-/* line 238, ../scss/_local_css.scss */
+/* line 322, ../scss/_local_css.scss */
 .content .rowInside .sectionObject h1 {
   font-family: 'ComeniaSansCondBold';
   font-size: 2.25rem;
   color: #781a42;
 }
-/* line 243, ../scss/_local_css.scss */
+/* line 327, ../scss/_local_css.scss */
 .content .rowInside .sectionObject h2 {
   font-size: 1.125rem;
   font-family: 'ComeniaSansCondBold';
   color: #444;
   padding: 0 0 0 0;
 }
-/* line 248, ../scss/_local_css.scss */
+/* line 332, ../scss/_local_css.scss */
 .content .rowInside .sectionObject h2.objectHeader {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-/* line 255, ../scss/_local_css.scss */
+/* line 339, ../scss/_local_css.scss */
 .content .rowInside .sectionObject h3, .content .rowInside .sectionObject h4, .content .rowInside .sectionObject h5, .content .rowInside .sectionObject h6 {
   font-size: 1rem;
   font-family: "Lucida Sans Demibold", "Lucida Sans Unicode", Arial, sans-serif;
   color: #000;
   padding: 0 0 0 0;
-  line-height: 10px;
+  line-height: 16px;
   margin: 0 0 0 0;
 }
-/* line 263, ../scss/_local_css.scss */
+/* line 347, ../scss/_local_css.scss */
 .content .rowInside .sectionObject p {
   font-size: 0.8125rem;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
@@ -5318,52 +5406,81 @@ header .tab-bar .menu-icon {
   line-height: 16px;
   margin: 0;
 }
-/* line 270, ../scss/_local_css.scss */
+/* line 354, ../scss/_local_css.scss */
 .content .rowInside .sectionObject p:last-of-type {
   padding-bottom: 0;
 }
-/* line 274, ../scss/_local_css.scss */
+/* line 358, ../scss/_local_css.scss */
 .content .rowInside .sectionObject strong {
   font-weight: bold;
 }
-/* line 277, ../scss/_local_css.scss */
+/* line 361, ../scss/_local_css.scss */
 .content .rowInside .sectionObject em {
   font-style: italic;
 }
-/* line 281, ../scss/_local_css.scss */
+/* line 365, ../scss/_local_css.scss */
 .content .rowInside img {
   float: left;
   margin-right: 0;
 }
-/* line 285, ../scss/_local_css.scss */
+/* line 369, ../scss/_local_css.scss */
 .content .rowInside.sectionGray {
   background-color: #eee;
   padding: 30px 0px 30px 0px;
   border-left: 75px solid #fff;
   border-right: 75px solid #fff;
 }
-/* line 303, ../scss/_local_css.scss */
+@media screen and (max-width: 848px) {
+  /* line 369, ../scss/_local_css.scss */
+  .content .rowInside.sectionGray {
+    padding: 0 0 30px 0;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+  }
+  /* line 379, ../scss/_local_css.scss */
+  .content .rowInside.sectionGray h2.objectHeader {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 848px) and (max-width: 848px) {
+  /* line 379, ../scss/_local_css.scss */
+  .content .rowInside.sectionGray h2.objectHeader {
+    padding-top: 0px;
+  }
+}
+
+/* line 401, ../scss/_local_css.scss */
 .content .rowInside.sectionGray img {
   margin: 0 1.25rem 0 0.625rem;
 }
-/* line 308, ../scss/_local_css.scss */
+@media screen and (max-width: 640px) {
+  /* line 401, ../scss/_local_css.scss */
+  .content .rowInside.sectionGray img {
+    display: block;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
+/* line 414, ../scss/_local_css.scss */
 .content .navArrows {
   background-image: url("http://www.brooklyn.cuny.edu/web/sup_foundation/diagonals.png");
   background-repeat: repeat;
   height: 71px;
   text-align: center;
-  margin-top: 3.125rem;
-  margin-bottom: 3.75rem;
+  margin-top: 3.75rem;
+  margin-bottom: 5.625rem;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px) {
-  /* line 308, ../scss/_local_css.scss */
+@media screen and (max-width: 640px) {
+  /* line 414, ../scss/_local_css.scss */
   .content .navArrows {
     display: none;
   }
 }
-/* line 320, ../scss/_local_css.scss */
+/* line 426, ../scss/_local_css.scss */
 .content .navArrows .arrowDown {
   display: inline-block;
   background: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png") no-repeat 0px 0px;
@@ -5371,11 +5488,11 @@ header .tab-bar .menu-icon {
   height: 26px;
   margin: 1.375rem 0.6875rem 0 0.6875rem;
 }
-/* line 326, ../scss/_local_css.scss */
+/* line 432, ../scss/_local_css.scss */
 .content .navArrows .arrowDown:hover {
   background: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png") no-repeat -142px 0px;
 }
-/* line 330, ../scss/_local_css.scss */
+/* line 436, ../scss/_local_css.scss */
 .content .navArrows .arrowUp {
   display: inline-block;
   background: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png") no-repeat -67px 0px;
@@ -5383,56 +5500,79 @@ header .tab-bar .menu-icon {
   height: 26px;
   margin: 1.375rem 0.6875rem 0 0.6875rem;
 }
-/* line 336, ../scss/_local_css.scss */
+/* line 442, ../scss/_local_css.scss */
 .content .navArrows .arrowUp:hover {
   background: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png") no-repeat -199px 0px;
 }
-/* line 341, ../scss/_local_css.scss */
+/* line 447, ../scss/_local_css.scss */
 .content .bigArrow {
-  height: 80px;
+  height: 48px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.875rem;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px) {
-  /* line 341, ../scss/_local_css.scss */
+@media screen and (max-width: 640px) {
+  /* line 447, ../scss/_local_css.scss */
   .content .bigArrow {
     display: none;
   }
 }
-/* line 352, ../scss/_local_css.scss */
+/* line 459, ../scss/_local_css.scss */
 .content .bigArrow .arrowDown {
   display: inline-block;
   background: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png") no-repeat 0px -94px;
   width: 140px;
   height: 48px;
-  margin: 1.375rem 0.6875rem 0 0.6875rem;
+  margin: 0;
 }
-/* line 366, ../scss/_local_css.scss */
+@media screen and (max-width: 848px) {
+  /* line 459, ../scss/_local_css.scss */
+  .content .bigArrow .arrowDown {
+    background: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png") no-repeat 0px -52px;
+    width: 122px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 459, ../scss/_local_css.scss */
+  .content .bigArrow .arrowDown {
+    display: none;
+  }
+}
+/* line 479, ../scss/_local_css.scss */
 .content img.banner {
   width: 100%;
-  height: 80%;
+  height: 40%;
   overflow: hidden;
 }
 
-/* line 373, ../scss/_local_css.scss */
-.contentElements a, footer a {
+/* line 486, ../scss/_local_css.scss */
+.sectionObject a, footer a {
   color: #781a42;
   font-weight: bold;
 }
-/* line 376, ../scss/_local_css.scss */
-.contentElements a:hover, footer a:hover {
+/* line 489, ../scss/_local_css.scss */
+.sectionObject a:hover, footer a:hover {
   color: #666;
 }
 
-/* line 381, ../scss/_local_css.scss */
+/* line 494, ../scss/_local_css.scss */
 footer {
   width: 100%;
   border-top: 8px solid #781a42;
   background-image: url("http://www.brooklyn.cuny.edu/web/sup_foundation/diagonals.png");
   background-repeat: repeat;
+  padding-left: 20px;
 }
-/* line 386, ../scss/_local_css.scss */
+@media screen and (max-width: 848px) {
+  /* line 494, ../scss/_local_css.scss */
+  footer {
+    padding-left: 10px;
+  }
+}
+/* line 503, ../scss/_local_css.scss */
 footer .footerNav {
   text-align: center;
   margin-top: 2.1875rem;
@@ -5440,28 +5580,28 @@ footer .footerNav {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 392, ../scss/_local_css.scss */
+/* line 509, ../scss/_local_css.scss */
 footer .footerNav ul {
   list-style-type: none;
   text-transform: uppercase;
 }
-/* line 395, ../scss/_local_css.scss */
+/* line 512, ../scss/_local_css.scss */
 footer .footerNav ul li {
   display: inline-block;
   padding-right: 0.6875rem;
 }
-/* line 398, ../scss/_local_css.scss */
+/* line 515, ../scss/_local_css.scss */
 footer .footerNav ul li:last-of-type {
   padding-right: 0;
 }
-/* line 404, ../scss/_local_css.scss */
+/* line 521, ../scss/_local_css.scss */
 footer h2 {
   font-size: 0.9375rem;
   font-family: 'ComeniaSansCondBold';
   text-transform: uppercase;
   color: #555;
 }
-/* line 410, ../scss/_local_css.scss */
+/* line 527, ../scss/_local_css.scss */
 footer p {
   font-size: 0.625rem;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
