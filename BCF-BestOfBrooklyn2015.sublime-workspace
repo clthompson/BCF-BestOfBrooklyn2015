@@ -159,7 +159,7 @@
 			"file": "css/bob.css",
 			"settings":
 			{
-				"buffer_size": 192800,
+				"buffer_size": 193563,
 				"line_ending": "Windows"
 			}
 		},
@@ -175,7 +175,7 @@
 			"file": "scss/_local_css.scss",
 			"settings":
 			{
-				"buffer_size": 12396,
+				"buffer_size": 12689,
 				"line_ending": "Windows"
 			}
 		},
@@ -200,6 +200,14 @@
 			"settings":
 			{
 				"buffer_size": 50185,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "splash.html",
+			"settings":
+			{
+				"buffer_size": 4365,
 				"line_ending": "Windows"
 			}
 		}
@@ -704,7 +712,7 @@
 					"file": "css/bob.css",
 					"settings":
 					{
-						"buffer_size": 192800,
+						"buffer_size": 193563,
 						"regions":
 						{
 						},
@@ -758,15 +766,15 @@
 					"file": "scss/_local_css.scss",
 					"settings":
 					{
-						"buffer_size": 12396,
+						"buffer_size": 12689,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5537,
-								5537
+								8274,
+								8274
 							]
 						],
 						"settings":
@@ -776,7 +784,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6334.0,
+						"translation.y": 4737.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -799,10 +807,12 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6653.0,
+						"translation.y": 188.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -856,6 +866,33 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "splash.html",
+					"settings":
+					{
+						"buffer_size": 4365,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2161,
+								2161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 700.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -922,7 +959,7 @@
 		[
 			[
 				"",
-				"/Z/Public/webDevelopment/master/MASTER.sublime-project"
+				"/Z/Public/$BCF_Website/Development/003-Production5/bcf.sublime-project"
 			]
 		],
 		"width": 380.0

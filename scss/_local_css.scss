@@ -18,15 +18,16 @@
 
 // Fonts Sizes - OVERRIDE
   $h1-font-size: rem-calc(36); // $h1-font-size: rem-calc(44);  // not used yet
-  $h2-font-size: rem-calc(18); // $h2-font-size: rem-calc(37);  // 22
-  $h3-font-size: rem-calc(16); // $h3-font-size: rem-calc(27);  // 18
+  $h2-font-size: rem-calc(22); // $h2-font-size: rem-calc(37);  // 22
+  $h3-font-size: rem-calc(18); // $h3-font-size: rem-calc(27);  // 18
+
   $h4-font-size: rem-calc(14); // $h4-font-size: rem-calc(23);  // not used yet
   $h5-font-size: rem-calc(15); // $h5-font-size: rem-calc(18);  // not used yet
   $h6-font-size: rem-calc(16); // $h6-font-size: 1rem;          // not used yet
 
 // Typical Paragraphs
-  $paragraph-font-size: rem-calc(13); // 15
-  $footer-font-size: rem-calc(10); //12
+  $paragraph-font-size: rem-calc(15); // 15 
+  $footer-font-size: rem-calc(12); //12
 
 // Backgrounds and Sprite Sheets
   $background-d: url('http://www.brooklyn.cuny.edu/web/sup_foundation/diagonals.png');
@@ -62,48 +63,67 @@ body {
     //z-index: -20000;
   }
 
+
+
 header {
   width: 100%;
-  height: rem-calc(55);
+  //background-image: $background-d;
+  //height: rem-calc(55);
   top:0px; 
-  margin:auto; 
+  //margin:auto; 
   position: fixed;
   z-index: 1000;
-  background-color: #fff;
-  @media #{$Medium} {
-    height: rem-calc(55); // 45
-  }
-
-  .logo {
-    position:fixed;
-    top:0;
-    z-index: 2;
-    overflow: visible;
-    padding: rem-calc(15) 0 0 rem-calc(20);
-    width: 163px;
-    height: 85px;
-    @media #{$Medium} {
-      padding: rem-calc(12) 0 0 rem-calc(10);
-      width: 132px;
-      height: 69px;
-    }
+  //background-color: #fff;
+  section {
+    //width: 100%;
+    //position: fixed;
+    //top:0px;
+    background-image: $background-d;
+    height: rem-calc(55);
     @media #{$Small} {
-      padding: rem-calc(12) 0 0 rem-calc(10); // 5 5
-      width: 132px; // 107
-      height: 69px; // 56
+      height: rem-calc(45); // 45
+    }
+    .logo {
+      position:fixed;
+      top:0;
+      //z-index: 2;
+      overflow: visible;
+      padding: rem-calc(15) 0 0 rem-calc(20);
+      width: 163px;
+      height: 85px;
+      @media #{$Medium} {
+        padding: rem-calc(12) 0 0 rem-calc(10);
+        width: 132px;
+        height: 69px;
+      }
+      @media #{$Small} {
+        padding: rem-calc(12) 0 0 rem-calc(10); // 5 5
+        width: 132px; // 107
+        height: 69px; // 56
+      }
     }
   }
-  nav.top-bar {
-    background-color: $color-white;
-    .top-bar-section {
-      //background-color: $color-white;
-      ul {
-        //background-color: $color-white;
-        li a {
-          font-family: 'ComeniaSansCondRegular';
-          text-transform: uppercase;
-          font-size: $h4-font-size;
+  nav {
+
+    ul{
+      list-style-type: none;
+      text-transform: uppercase;
+      //display: table;
+      li {
+        font-family: 'ComeniaSansCondBold';
+        font-size: $h6-font-size;
+        //color: $color-maroon;
+
+        display: inline-block;
+        padding: rem-calc(16) rem-calc(33) 0 0;
+        //display: table-cell;
+        //vertical-align: middle;
+        &:last-of-type {
+          padding-right: rem-calc(20);
+        }
+        a {
           color: $color-black;
+          //font-weight: $bold;
           &:hover {
             color: $color-gray666;
           }
@@ -111,40 +131,15 @@ header {
       }
     }
   }
-  .right-off-canvas-menu {
-    //height: 300px;
-    //z-index: 20;
-    //background-color: $color-white;
-    ul li a {
-      font-family: 'ComeniaSansCondRegular';
-      text-transform: uppercase;
-      font-size: $h4-font-size;
-      color: $color-black;
-      &:hover {
-        color: $color-gray666;
-      }
-      margin: 10px;
-    }
-  }
-    //.right-off-canvas-menu ul, li a 
-    //.off-canvas-wrap {
-    //  height: rem-calc(55);
-    //  @media #{$Phone} {
-    //    height: rem-calc(45);
-    //  }
-    //}
-  .tab-bar .menu-icon {
-    height: rem-calc(55);
-    //@media #{$Phone} {
-    //  height: rem-calc(45);
-    //}
-  }
 }
 
-.off-canvas-menu-height {
-   height: 300px; // what is the optimum depth?
-  // background-color: $color-white;
-}
+
+
+
+
+
+
+  
 
 
 
@@ -262,46 +257,50 @@ header {
         }
       }
       .featureTop {
-        margin: 20px 10px 15px 10px;
+        //margin: 20px 10px 15px 10px;
       }
       .featureBottom {
-        margin: 20px 10px 0px 10px;
-      }
-      .icon {
-        //display: table;
-        //width: 100%;
-        height: 65px;
         //margin: 20px 10px 0px 10px;
-        padding: 5px 0 15px 0;
+      }
+      .iconGray{
+          background-color: $color-grayeee;
+        }
+      .icon {
+        //border: 1px solid #000;
+        display: table;
+        height: 65px;        
+        padding: 5px 0 0px 0;
+        margin: 15px 0px 15px 0px;
         &:last-of-type{
           padding-bottom: 0px;
         }
-        &.iconGray{
-          background-color: $color-grayeee;
-        }
         img {
+          //border: 1px solid #000;
+          display: table-cell;
           float: left;
-          //display: inline-block;
           margin: 0 rem-calc(10) 0 rem-calc(10);
-          position: relative;
-          top: 50%;
-          transform: translateY(-50%);
+          //position: relative;
+          //top: 50%;
+          //transform: translateY(-50%);
         }
         p {
-          //display: table-cell;
-          //vertical-align: middle;
-          position: relative;
-          top: 45%;
-          transform: translateY(-50%);
+          //border: 1px solid #000;
+          display: table-cell;
+          vertical-align: middle;
+          //position: relative;
+          //top: 45%;
+          //transform: translateY(-50%);
           //margin-left: 75px;
         }
       }
+      .bobButtonW {
+        margin: 20px 10px 15px 10px;
+      }
       .bobButton {
-        height: 55px;
+        //height: 55px;
         background-color: $color-maroon;
         border: $thin-maroon2;
-        //margin: 20px 10px 0px 10px;
-        padding: 10px 0 5px 0;
+        padding: 17px 0px 17px 0;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -315,6 +314,21 @@ header {
           text-transform: uppercase;
         }
       }
+      .map {
+        position: relative;
+        padding-bottom: 100%;
+        //padding: 0 10px 100% 10px;
+        margin: 0px 0px 10px 0px;
+        height: 0;
+        overflow: hidden;
+        iframe {
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
       img {
         float: left;
         margin: 0 rem-calc(20) 0 rem-calc(20);
@@ -325,34 +339,49 @@ header {
         color: $color-maroon;
       }
       h2 {
+        //border: 1px solid #000;
         font-size: $h2-font-size;
         font-family: 'ComeniaSansCondBold';
         color: $color-gray444;
-        padding: 0 0 rem-calc(0) 0;
+        padding: 0 0 10px 0;
+        margin: 0 0 0 0;
         &.objectHeader {
           text-transform: uppercase;
           text-align: center;
-          margin: 0;
-          padding: 0;
+          padding: 0 0 0 0;
+          margin: 0 0 0 0;
         }
       }
       h3, h4, h5, h6 {
+        //border: 1px solid #000;
         font-size: $h3-font-size;
         font-family: $font-lucida-Demibold;
         color: $color-black;
-        padding: 0 0 0 0;
-        line-height: 16px; //22
+        padding: 15px 0 2px 0;
         margin: 0 0 0 0;
+        line-height: 22px; //22
+        &:first-of-type {
+          padding-top: 0;
+        }
       }
       p {
+        //border: 1px solid #000;
         font-size: $paragraph-font-size;
         font-family: $font-lucida;
-        color: $color-gray;
-        padding: rem-calc(8) 0 rem-calc(23) 0;
-        line-height: 16px; //19
-        margin: 0;
+        color: $color-black;
+        padding: 3px 0 15px 0;
+        margin: 0 0 0 0;
+        line-height: 19px; //19
+        &:first-of-type {
+          padding-top: 0;
+        }
         &:last-of-type {
           padding-bottom: 0;
+        }
+      }
+      ul {
+        li {
+
         }
       }
       strong {
@@ -483,7 +512,7 @@ header {
   }
 }
 
-.sectionObject a, footer a {
+.sectionObject a, footer a,{
   color: $color-maroon;
   font-weight: $bold;
   &:hover {
@@ -520,14 +549,17 @@ footer {
   }
   h2 {
     font-size: $h5-font-size;
+    padding: 0 0 0px 0;
     font-family: 'ComeniaSansCondBold';
     text-transform: uppercase;
     color: $color-gray555;
   }
   p {
     font-size: $footer-font-size;
+    line-height: 15px; //19
     font-family: $font-lucida;
     color: $color-gray555;
+    padding: 0px 0 7px 0;
   }
 }
 
