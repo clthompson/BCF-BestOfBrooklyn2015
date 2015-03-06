@@ -45,6 +45,7 @@
   $color-grayccc: #ccc;
   $color-grayeee: #eee;
   $color-grayefe: #efefef;
+  $color-gray404: #404040;
 
 // Line Styles
   $thick-maroon: 8px solid $color-maroon;
@@ -56,15 +57,8 @@ body {
   background-color: $color-white;
 }
 
- .main-section {
-    //display: none;
-    //height: 300px;
-    //position: static;
-    //z-index: -20000;
-  }
 
-
-
+/* Header*/
 header {
   width: 100%;
   //background-image: $background-d;
@@ -86,11 +80,12 @@ header {
     .logo {
       position:fixed;
       top:0;
+      border: 0;
       //z-index: 2;
       overflow: visible;
       padding: rem-calc(15) 0 0 rem-calc(20);
       width: 163px;
-      height: 85px;
+      height: 86px;
       @media #{$Medium} {
         padding: rem-calc(12) 0 0 rem-calc(10);
         width: 132px;
@@ -102,46 +97,133 @@ header {
         height: 69px; // 56
       }
     }
-  }
-  nav {
+    .showPushMenu {
+      cursor: pointer;
+      display: inline-block;
+      background: $SpriteSheet no-repeat -196px -42px;
+      width: 55px;
+      height: 55px;
+      //margin: rem-calc(22) rem-calc(11) 0 rem-calc(11);
+      //&:hover {
+      //  background: $SpriteSheet no-repeat -142px 0px;
+      //}
+      @media #{$Small} {
+        background: $SpriteSheet no-repeat -142px -42px;
+        width: 45px;
+        height: 45px;
+      }
+    }
+    nav.topBar { /* need to get this styling back properly */
+      ul{
+        list-style-type: none;
+        text-transform: uppercase;
+        margin:0;
+        padding: rem-calc(16) 0 rem-calc(16) 0;
+        //display: table;
+        li {
+          font-family: 'ComeniaSansCondBold';
+          font-size: $h6-font-size;
+          //color: $color-maroon;
 
-    ul{
-      list-style-type: none;
-      text-transform: uppercase;
-      //display: table;
-      li {
-        font-family: 'ComeniaSansCondBold';
-        font-size: $h6-font-size;
-        //color: $color-maroon;
-
-        display: inline-block;
-        padding: rem-calc(16) rem-calc(33) 0 0;
-        //display: table-cell;
-        //vertical-align: middle;
-        &:last-of-type {
-          padding-right: rem-calc(20);
-        }
-        a {
-          color: $color-black;
-          //font-weight: $bold;
-          &:hover {
-            color: $color-gray666;
+          display: inline-block;
+          padding: 0 rem-calc(33) 0 0;
+          //display: table-cell;
+          //vertical-align: middle;
+          &:last-of-type {
+            padding-right: rem-calc(20);
+          }
+          a {
+            color: $color-gray222;
+            text-decoration:none;
+            //font-weight: $bold;
+            &:hover {
+              color: $color-gray666;
+            }
           }
         }
       }
     }
+    nav.cbp-spmenu {
+      background: $color-white;
+      position: fixed;
+      &.cbp-spmenu-vertical {
+        width: 240px;
+        height: 100%;
+        top: 55px;
+        z-index: 1000;
+        @media #{$Small} {
+          top: 45px;
+        }
+      }
+      ul{
+        list-style-type: none;
+        text-transform: uppercase;
+        //display: table;
+        li {
+          font-family: 'ComeniaSansCondBold';
+          font-size: $h6-font-size;
+          //color: $color-maroon;
+
+          display: inline-block;
+          padding: rem-calc(16) rem-calc(33) 0 0;
+          //display: table-cell;
+          //vertical-align: middle;
+          &:last-of-type {
+            padding-right: rem-calc(20);
+          }
+          &.hideForSmallOnly {
+            @media #{$Small} {
+              display: none;
+            }
+          }
+          a {
+            color: $color-gray222;
+            text-decoration:none;
+            //font-weight: $bold;
+            &:hover {
+              color: $color-gray666;
+            }
+          }
+        }
+      }
+    }  
   }
 }
 
+/* Vertical menu that slides from the left or right */
 
+.cbp-spmenu-right {
+  right: -240px;
+}
 
+.cbp-spmenu-right.cbp-spmenu-open {
+  right: 0px;
+}
 
+/* Push classes applied to the body */
 
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
 
+.cbp-spmenu-push-toright {
+  left: 240px;
+}
 
-  
+.cbp-spmenu-push-toleft {
+  left: -240px;
+}
 
+/* Transitions */
 
+.cbp-spmenu,
+.cbp-spmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 
 .anchor {
   position: relative;
@@ -152,71 +234,115 @@ header {
   visibility: hidden;
 }
 
-/*.full-width {
-  //width: 100%;
-  //height: 100%;//
-  //box-sizing: border-box;
-  //background-color: $color-grayeee;
+/* Feature Image */
 
-  &.depth {
-    background-image: url("http://charlesleonthompson.com/wp-content/uploads/2014/12/IMG_3122-1024x1280.jpg");
-  
-    position: relative;
-    width: 100%;
-    height: 60%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0 2.5%;
-    overflow: hidden;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    
-    //width: 100%;
-    //height: 350px;
-    //position: relative;
-    //padding-top: 1.875rem;/
+.featureContainer {
+  @include vendor-prefix(height, 100vh); // height:100vh;
+  background-image: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_starryBackground_1600x1145.jpg");
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  border-top: 55px solid $color-white;
+  position: relative;
+  //display:table;
+  //margin-top: 55px;
+  @media #{$Small} {
+    border-top: 45px solid $color-white;
+  }
+  .featureImage {
+    //background-image: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_FrontElements_1404x653.png");
+    //border: 1px solid #000;
+    width: 85%;
+    // height: 60%;
     //overflow: hidden;
-
-    margin-bottom: 0;
-
-    img {
-      overflow: hidden;
-      height: 350px;
-      //display: block;
-      //margin-left: auto;
-      //margin-right: auto;
-      //z-index: -1;
-      @media #{$iPadPortrait} { //needs work!
-        max-width:1080px;
-        height:auto;
+    //margin: auto;
+    //position: absolute;
+    //top: 0; left: 0; bottom: 0; right: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include vendor-prefix(transform, translate(-50%, -60%)); //transform: translate(-50%, -60%); 
+  }
+  .bigArrow {
+    //border: 1px solid #000;
+    //background-image: $background-d;
+    background-color: $color-white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    text-align: center;
+    //padding-top: rem-calc(15);
+    padding-bottom: rem-calc(30);
+    margin-left: auto;
+    margin-right: auto;
+    @media #{$Small} {
+      height: 60px;
+    }
+    .arrowDown {
+      display: inline-block;
+      background: $SpriteSheet no-repeat 0px -94px;
+      width: 140px;
+      height: 48px;
+      //border: 1px solid #000;
+      margin-top: 20px;
+      //&:hover {
+      //  background: $SpriteSheet no-repeat -142px 0px;
+      //}
+      @media #{$Medium} {
+        background: $SpriteSheet no-repeat 0px -52px;
+        width: 122px;
+        height: 40px;
+        margin-top: 10px;
       }
+      //@media #{$Small} {
+      //  display: none;
+      //}
     }
-    section {
-      //position: absolute;
-      top:0;
-      left:0%;
-      right:0%;
-    }
-    .in {
-      //position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: 2;
-      padding-right: 10px;
-      right:0px;
-      top: 150px;
-    }
+  }
+}
 
+
+
+/*.featureWrapper {
+  width:100%;
+  min-height:100%;
+  background-color: $color-maroon;
+  box-sizing: border-box;
+  .featureContainer {
+    position:relative;
+    width:100%;
+    height:100%;
+    background-image: url('../images/BOB_splash_1600x1145.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:0 2.5%;
+    display:table;
+    padding-bottom:0;
+    &:after{
+      content:"";
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      background-color:rgba(0, 0, 0, 0.2);
+      z-index:0;
+    }
+    .featureImage {
+
+    }
   }
 }*/
 
 
 
+
+/* Content */
 .content {
-  margin-top: 20px;
+  margin-top: 0px;
   .rowInside {
     //border: 1px solid #ccc;
     padding: 0px 75px 30px 75px;
@@ -305,7 +431,8 @@ header {
         margin-left: auto;
         margin-right: auto;
         &:hover {
-          background-color: $color-maroon2;
+          background-color: $color-gray404;
+          border: $color-gray666;
         }
         p {
           color: $color-white;
@@ -350,6 +477,11 @@ header {
           text-align: center;
           padding: 0 0 0 0;
           margin: 0 0 0 0;
+          line-height: 24px;
+          @media #{$Small} {
+            font-size: rem-calc(20);
+            line-height: 21px;
+          }
         }
       }
       h3, h4, h5, h6 {
@@ -473,38 +605,7 @@ header {
       }
     }
   }
-  .bigArrow {
-    //border: 1px solid #000;
-    //background-image: $background-d;
-    height: 48px;
-    text-align: center;
-    margin-top: rem-calc(0);
-    margin-bottom: rem-calc(30);
-    margin-left: auto;
-    margin-right: auto;
-    @media #{$Small} {
-      display: none;
-    }
-    .arrowDown {
-      display: inline-block;
-      background: $SpriteSheet no-repeat 0px -94px;
-      width: 140px;
-      height: 48px;
-      //border: 1px solid #000;
-      margin: 0;
-      //&:hover {
-      //  background: $SpriteSheet no-repeat -142px 0px;
-      //}
-      @media #{$Medium} {
-        background: $SpriteSheet no-repeat 0px -52px;
-        width: 122px;
-        height: 40px;
-      }
-      @media #{$Small} {
-        display: none;
-      }
-    }
-  }
+  
   img.banner {
     width: 100%;
     height: 40%;
@@ -512,14 +613,17 @@ header {
   }
 }
 
+/* Anchors */
 .sectionObject a, footer a,{
   color: $color-maroon;
   font-weight: $bold;
+  text-decoration: none;  
   &:hover {
     color: $color-gray666;
   }
 }
 
+/* Footer */
 footer {
   width: 100%;
   border-top: $thick-maroon;
