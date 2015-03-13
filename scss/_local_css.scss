@@ -49,7 +49,7 @@
 
 // Line Styles
   $thick-maroon: 8px solid $color-maroon;
-  $thin-gray666: 1px solid $color-gray666;
+  $thin-gray666: 2px solid $color-gray666;
   $thin-grayccc: 1px solid $color-grayccc;
   $thin-maroon2: 2px solid $color-maroon2;
 
@@ -113,7 +113,7 @@ header {
         height: 45px;
       }
     }
-    nav.topBar { /* need to get this styling back properly */
+    nav.topBar { 
       ul{
         list-style-type: none;
         text-transform: uppercase;
@@ -164,7 +164,7 @@ header {
           font-size: $h6-font-size;
           //color: $color-maroon;
 
-          display: inline-block;
+          display: block;
           padding: rem-calc(16) rem-calc(33) 0 0;
           //display: table-cell;
           //vertical-align: middle;
@@ -237,30 +237,25 @@ header {
 /* Feature Image */
 
 .featureContainer {
-  @include vendor-prefix(height, 100vh); // height:100vh;
-  background-image: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_starryBackground_1600x1145.jpg");
+  @include vendor-prefix(height, 100vh);
+  //background-image: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_starryBackground_1600x1145.jpg");
   background-position:center center;
   background-repeat:no-repeat;
   background-size:cover;
   border-top: 55px solid $color-white;
   position: relative;
-  //display:table;
-  //margin-top: 55px;
   @media #{$Small} {
     border-top: 45px solid $color-white;
+    //background-image: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_starryBackground_838x600.jpg");
+  }
+  .bgImage {
   }
   .featureImage {
-    //background-image: url("http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_FrontElements_1404x653.png");
-    //border: 1px solid #000;
     width: 85%;
-    // height: 60%;
-    //overflow: hidden;
-    //margin: auto;
-    //position: absolute;
-    //top: 0; left: 0; bottom: 0; right: 0;
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 5;
     @include vendor-prefix(transform, translate(-50%, -60%)); //transform: translate(-50%, -60%); 
   }
   .bigArrow {
@@ -294,7 +289,7 @@ header {
         background: $SpriteSheet no-repeat 0px -52px;
         width: 122px;
         height: 40px;
-        margin-top: 10px;
+        margin-top: 15px;
       }
       //@media #{$Small} {
       //  display: none;
@@ -349,10 +344,10 @@ header {
     //border-left: 75px solid $color-white;
     //border-right: 75px solid $color-white;
     @media #{$Medium} {
-      padding: 0px 10px 30px 10px;
+      padding: 0px 10px 10px 10px;
     }
     @media #{$Small} {
-      padding: 0px 0px 15px 0px;
+      padding: 0px 0px 0px 0px;
     } 
     &.splash {
       //border: 1px solid #000;
@@ -431,8 +426,9 @@ header {
         margin-left: auto;
         margin-right: auto;
         &:hover {
+          border: $thin-maroon2;
           background-color: $color-gray404;
-          border: $color-gray666;
+          border: $thin-gray666;
         }
         p {
           color: $color-white;
@@ -463,7 +459,7 @@ header {
       h1 {
         font-family: 'ComeniaSansCondBold';
         font-size: $h1-font-size;
-        color: $color-maroon;
+        color: $color-gray444;
       }
       h2 {
         //border: 1px solid #000;
@@ -521,6 +517,10 @@ header {
       }
       em {
         font-style: $italic;
+      }
+      .pdfListItem {
+        display: inline-block;
+        padding: 0 20px 0 10px;
       }
     }
     img {
@@ -581,8 +581,15 @@ header {
     margin-bottom: rem-calc(90);
     margin-left: auto;
     margin-right: auto;
+    @media #{$Medium} {
+      margin-top: rem-calc(40);
+      margin-bottom: rem-calc(40);
+    }
     @media #{$Small} {
       display: none;
+    }
+    &.last {
+      margin-bottom: rem-calc(0);
     }
     .arrowDown {
       display: inline-block;
@@ -605,12 +612,6 @@ header {
       }
     }
   }
-  
-  img.banner {
-    width: 100%;
-    height: 40%;
-    overflow: hidden;
-  }
 }
 
 /* Anchors */
@@ -626,12 +627,23 @@ header {
 /* Footer */
 footer {
   width: 100%;
-  border-top: $thick-maroon;
-  background-image: $background-d;
-  background-repeat: repeat;
-  padding-left: 20px;
-  @media #{$Medium} {
-    padding-left: 10px;
+  //border-top: $thick-maroon;
+  //background-image: $background-d;
+  //background-repeat: repeat;
+  //padding: 0 rem-calc(20) 0 rem-calc(20);
+  //@media #{$Medium} {
+  //  padding: 0 rem-calc(10) 0 rem-calc(10);
+  //}
+  section {
+    padding: 0 rem-calc(20) 0 rem-calc(20);
+    background-image: $background-d;
+    background-repeat: repeat;
+    @media #{$Medium} {
+      padding: 0 rem-calc(10) 0 rem-calc(10);
+    }
+    &.topLine {
+      border-top: $thick-maroon;
+    }
   }
   .footerNav {
     text-align: center;
@@ -642,28 +654,37 @@ footer {
     ul {
       list-style-type: none;
       text-transform: uppercase;
+      padding: 0;
       li {
         display: inline-block;
-        padding-right: rem-calc(11);
-        &:last-of-type {
-          padding-right: 0;
+        padding: 0 rem-calc(6) 0 rem-calc(5);
+        &.hideForSmallOnly {
+          @media #{$Small} {
+            display: none;
+          }
         }
       }
     }
   }
   h2 {
     font-size: $h5-font-size;
-    padding: 0 0 0px 0;
+    //padding: 0 0 0px 20px;
     font-family: 'ComeniaSansCondBold';
     text-transform: uppercase;
     color: $color-gray555;
+    @media #{$Medium} {
+      //padding: 0 0 0px 20px;
+    }
   }
   p {
     font-size: $footer-font-size;
     line-height: 15px; //19
     font-family: $font-lucida;
     color: $color-gray555;
-    padding: 0px 0 7px 0;
+    //padding: 0px 0 7px 20px;
+    @media #{$Medium} {
+      //padding: 0 0 0px 10px;
+    }
   }
 }
 

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"h",
+				"hidden"
+			],
+			[
 				"color-",
 				"color-white"
 			],
@@ -132,10 +136,6 @@
 				"inline-block"
 			],
 			[
-				"h",
-				"height"
-			],
-			[
 				"font",
 				"font-style"
 			],
@@ -159,7 +159,7 @@
 			"file": "css/bob.css",
 			"settings":
 			{
-				"buffer_size": 103460,
+				"buffer_size": 103742,
 				"line_ending": "Windows"
 			}
 		},
@@ -175,7 +175,7 @@
 			"file": "scss/_local_css.scss",
 			"settings":
 			{
-				"buffer_size": 15780,
+				"buffer_size": 16256,
 				"line_ending": "Windows"
 			}
 		},
@@ -183,7 +183,7 @@
 			"file": "working.html",
 			"settings":
 			{
-				"buffer_size": 20511,
+				"buffer_size": 20866,
 				"line_ending": "Windows"
 			}
 		},
@@ -423,6 +423,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"section",
 			"id=\"top\"",
 			"id=\"\"",
 			"a {",
@@ -549,8 +550,7 @@
 			"/build/",
 			"\"/faq\"",
 			"\"/contact-us\"",
-			"\"/about\"",
-			"\"/facilities\""
+			"\"/about\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -704,15 +704,15 @@
 					"file": "css/bob.css",
 					"settings":
 					{
-						"buffer_size": 103460,
+						"buffer_size": 103742,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								91687,
-								91700
+								102759,
+								102759
 							]
 						],
 						"settings":
@@ -722,7 +722,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 37984.0,
+						"translation.y": 43969.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -758,15 +758,15 @@
 					"file": "scss/_local_css.scss",
 					"settings":
 					{
-						"buffer_size": 15780,
+						"buffer_size": 16256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5495,
-								5495
+								4263,
+								4263
 							]
 						],
 						"settings":
@@ -776,7 +776,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3386.0,
+						"translation.y": 2096.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -786,15 +786,15 @@
 					"file": "working.html",
 					"settings":
 					{
-						"buffer_size": 20511,
+						"buffer_size": 20866,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2641,
-								2641
+								4809,
+								4817
 							]
 						],
 						"settings":
@@ -804,7 +804,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 900.0,
+						"translation.y": 218.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -926,7 +926,7 @@
 		[
 			[
 				"",
-				"/Z/Public/webDevelopment/master/MASTER.sublime-project"
+				"/Z/Public/$$$Feirstein/Development/004/feirstein/Feirstein.sublime-project"
 			]
 		],
 		"width": 380.0
