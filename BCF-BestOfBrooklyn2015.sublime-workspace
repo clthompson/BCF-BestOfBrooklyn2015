@@ -159,7 +159,7 @@
 			"file": "css/bob.css",
 			"settings":
 			{
-				"buffer_size": 103742,
+				"buffer_size": 105258,
 				"line_ending": "Windows"
 			}
 		},
@@ -175,7 +175,7 @@
 			"file": "scss/_local_css.scss",
 			"settings":
 			{
-				"buffer_size": 16256,
+				"buffer_size": 17064,
 				"line_ending": "Windows"
 			}
 		},
@@ -423,6 +423,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"desktop",
+			"55px",
+			".bgImage",
+			"gray",
 			"section",
 			"id=\"top\"",
 			"id=\"\"",
@@ -546,11 +550,7 @@
 			"\"/facilities\"",
 			"\"/academics\"",
 			"\"/admissions\"",
-			"\"/\"",
-			"/build/",
-			"\"/faq\"",
-			"\"/contact-us\"",
-			"\"/about\""
+			"\"/\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -704,15 +704,15 @@
 					"file": "css/bob.css",
 					"settings":
 					{
-						"buffer_size": 103742,
+						"buffer_size": 105258,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								102759,
-								102759
+								0,
+								0
 							]
 						],
 						"settings":
@@ -722,7 +722,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 43969.0,
+						"translation.y": 35812.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -758,15 +758,15 @@
 					"file": "scss/_local_css.scss",
 					"settings":
 					{
-						"buffer_size": 16256,
+						"buffer_size": 17064,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4263,
-								4263
+								6555,
+								6555
 							]
 						],
 						"settings":
@@ -776,7 +776,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2096.0,
+						"translation.y": 3578.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -793,8 +793,8 @@
 						"selection":
 						[
 							[
-								4809,
-								4817
+								326,
+								236
 							]
 						],
 						"settings":
@@ -804,7 +804,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 218.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -926,7 +926,7 @@
 		[
 			[
 				"",
-				"/Z/Public/$$$Feirstein/Development/004/feirstein/Feirstein.sublime-project"
+				"/Z/Public/webDevelopment/master/MASTER.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -935,6 +935,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 162.0,
+	"side_bar_width": 277.0,
 	"status_bar_visible": true
 }
