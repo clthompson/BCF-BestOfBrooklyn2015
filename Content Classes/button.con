@@ -1,0 +1,25 @@
+anc_link - link anchor
+opt_forSmall - hide for small screens
+stf_eventTracking - eventtTracking code
+stf_text - text label
+
+Red Dots
+          <!IoRangeRedDotMode><section class="row"><div class="large-12 columns" style="padding: 15px 0px 0px 0px;"><!/IoRangeRedDotMode>
+            <!IoRangeRedDotMode><!IoRedDotOpenPage><!IoRangeNoEditMode><span style="color:red">Open Button</span><br/><br/><!/IoRangeNoEditMode>
+            <!IoRangeRedDotEditOnly><span style="color:red">Close Close</span><br/><br/><!/IoRangeRedDotEditOnly><!/IoRangeRedDotMode>
+            <!IoRangeRedDotEditOnly>
+              <!IoRedDot_opt_forSmall><span style="color:red">Display/Hide Button for Small Screens?</span></br>
+              <!IoRedDot_anc_link><span style="color:red">Add/Edit Button Link</span></br>
+              <!IoRedDot_stf_eventTracking><span style="color:red">Add/Edit Link EventTracking</span></br>
+              <!IoRedDot_stf_text><span style="color:red">Add/Edit Button Label</span></br>
+            <!/IoRangeRedDotEditOnly>
+          <!IoRangeRedDotMode></div></section><!/IoRangeRedDotMode>
+
+Code
+            <div class="bobButtonW">
+                <a href="<%anc_link%>" class="<%opt_forSmall%>" <%stf_eventTracking%>><div class="bobButton">
+                    <p><%stf_text%></p>
+                </div>
+                </a>
+            </div>
+ 

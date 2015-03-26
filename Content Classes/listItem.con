@@ -1,0 +1,19 @@
+opt_display - optional display 
+list_list - list of connected pages
+stf_title - referenced titles from connected pages
+
+Red Dots
+            <!IoRangeRedDotMode><section class="row"><div class="large-12 columns" style="padding: 15px 0px 0px 0px;"><!/IoRangeRedDotMode>
+            <!IoRangeRedDotMode><!IoRedDotOpenPage><!IoRangeNoEditMode><span style="color:red">Open List</span><br/><br/><!/IoRangeNoEditMode>
+            <!IoRangeRedDotEditOnly><span style="color:red">Close List</span><br/><br/><!/IoRangeRedDotEditOnly><!/IoRangeRedDotMode>
+            <!IoRangeRedDotEditOnly>
+              <!IoRedDot_list_list><span style="color:red">Add/Edit/Order List Item</span></br>
+            <!/IoRangeRedDotEditOnly>
+                
+            <!IoRangeRedDotMode></div></section><!/IoRangeRedDotMode>
+
+Code
+<!IoRangeConditional><ul><!-- <%opt_display%> -->
+<!IoRangeList><li class="pdfListItem"><a href="<%list_list%>"><%stf_title%></a></li><!/IoRangeList>
+</ul><!/IoRangeConditional>
+ 

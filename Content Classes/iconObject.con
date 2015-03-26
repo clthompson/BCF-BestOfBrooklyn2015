@@ -1,0 +1,24 @@
+opt_iconGray - background color
+img_image - icon image
+txt_text - text label
+
+Red Dots
+        <!IoRangeRedDotMode><section class="row"><div class="large-12 columns" style="padding: 80px 0px 0px 30px;"><!/IoRangeRedDotMode>
+            <!IoRangeRedDotMode><!IoRedDotOpenPage><!IoRangeNoEditMode><span style="color:red">Open Icon</span><br/><br/><!/IoRangeNoEditMode>
+            <!IoRangeRedDotEditOnly><span style="color:red">Close Icon</span><br/><br/><!/IoRangeRedDotEditOnly><!/IoRangeRedDotMode>
+            <!IoRangeRedDotEditOnly>
+              <!IoRedDot_opt_iconGray><span style="color:red">Add/Edit Icon Background Color</span></br>
+              <!IoRedDot_img_image><span style="color:red">Add/Edit Icon Image</span></br>
+              <!IoRedDot_txt_text><span style="color:red">Add/Edit Icon Label</span></br>
+            <!/IoRangeRedDotEditOnly>
+                
+        <!IoRangeRedDotMode></div></section><!/IoRangeRedDotMode>
+
+Code
+            <div class="<%opt_iconGray%>">
+                <div class="icon">
+                    <img src="<%img_image%>">
+                    <%txt_text%>
+                </div>
+            </div> 
+ 

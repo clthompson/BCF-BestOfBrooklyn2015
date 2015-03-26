@@ -1,0 +1,18 @@
+opt_forSmall - display option for small screens
+txt_iframe - google maps iframe code
+
+Red Dots
+          <!IoRangeRedDotMode><section class="row"><div class="large-12 columns" style="padding: 15px 0px 0px 0px;"><!/IoRangeRedDotMode>
+            <!IoRangeRedDotMode><!IoRedDotOpenPage><!IoRangeNoEditMode><span style="color:red">Open Map</span><br/><br/><!/IoRangeNoEditMode>
+            <!IoRangeRedDotEditOnly><span style="color:red">Close Map</span><br/><br/><!/IoRangeRedDotEditOnly><!/IoRangeRedDotMode>
+            <!IoRangeRedDotEditOnly>
+              <!IoRedDot_opt_forSmall><span style="color:red">Display/Hide Section for Small Screens?</span></br>
+              <!IoRedDot_txt_iframe><span style="color:red">Add/Edit Map IFrame</span></br>
+            <!/IoRangeRedDotEditOnly> 
+          <!IoRangeRedDotMode></div></section><!/IoRangeRedDotMode>
+
+Code
+                <div class="map <%opt_forSmall%>">
+                    <%txt_iframe%>
+                </div> 
+ 

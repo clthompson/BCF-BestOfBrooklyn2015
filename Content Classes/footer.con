@@ -1,0 +1,26 @@
+opt_year - select the year for the Top footer link
+con_navigation - references the header nav container
+
+Code
+    <div class="bg">
+            <section class="row topLine">
+                <div class="large-12 medium-12 columns footerNav">
+                    <ul>
+                        <li><a href="#top<%opt_year%>" ga-category="BOB" ga-action="Navigate" ga-label="BOB Nav top">Top</a></li>
+                        <%con_navigation%>
+                    </ul>
+                </div>
+            </section>
+            <section class="row">
+                <div class="large-12 medium-12 columns">
+                    <h2>The Brooklyn College Foundation</h2>
+                    <p>2900 Bedford Avenue<br />
+                    Brooklyn, NY 11210<br />
+                    Phone: 718.951.5074<br />
+                    Fax: 718.951.4248</p>
+                    <p>Visit the <a href="http://www.brooklyn.cuny.edu/web/support/foundation.php" ga-category="BOB" ga-action="Navigate" ga-label="BOB BCF Footer Link">Brooklyn College Foundation website</a></p>
+                    <p>&copy; <script>document.write(new Date().getFullYear())</script> The Brooklyn College Foundation</p>
+                </div>
+            </section>
+     </div>
+ 

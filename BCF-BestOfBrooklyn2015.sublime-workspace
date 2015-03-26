@@ -159,7 +159,7 @@
 			"file": "css/bob.css",
 			"settings":
 			{
-				"buffer_size": 105258,
+				"buffer_size": 55914,
 				"line_ending": "Windows"
 			}
 		},
@@ -185,22 +185,6 @@
 			{
 				"buffer_size": 20866,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "working-Menu4.html",
-			"settings":
-			{
-				"buffer_size": 16740,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/component.css",
-			"settings":
-			{
-				"buffer_size": 2252,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -276,6 +260,9 @@
 	},
 	"file_history":
 	[
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/working-Menu4.html",
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/css/component.css",
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/Content Classes/sectionObject.con",
 		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/js/classie.js",
 		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/working-Menu.html",
 		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/working-Menu3.html",
@@ -400,10 +387,7 @@
 		"/Z/Public/$BCF_Website/Development/003-Production5/pageBuild-FlexNav.html",
 		"/Z/Public/$BCF_Website/Development/Flexnav/README.md",
 		"/Z/Public/$BCF_Website/Development/003-Production5/pageBuild.html",
-		"/Z/Public/$BCF_Website/Development/003-Production5/FlexNavMod1.html",
-		"/Z/Public/$BCF_Website/Development/003-Production5/sass/flexnav.scss",
-		"/Z/Public/$BCF_Website/Development/Flexnav/index.html",
-		"/C/Users/jdoe/AppData/Local/Temp/Rar$DR56.616/flexnav-master/css/flexnav.css"
+		"/Z/Public/$BCF_Website/Development/003-Production5/FlexNavMod1.html"
 	],
 	"find":
 	{
@@ -423,6 +407,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bold",
 			"desktop",
 			"55px",
 			".bgImage",
@@ -549,8 +534,7 @@
 			"\"/about\"",
 			"\"/facilities\"",
 			"\"/academics\"",
-			"\"/admissions\"",
-			"\"/\""
+			"\"/admissions\""
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -704,7 +688,7 @@
 					"file": "css/bob.css",
 					"settings":
 					{
-						"buffer_size": 105258,
+						"buffer_size": 55914,
 						"regions":
 						{
 						},
@@ -719,10 +703,11 @@
 						{
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 35812.0,
+						"translation.y": 4911.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -765,8 +750,8 @@
 						"selection":
 						[
 							[
-								6555,
-								6555
+								16708,
+								16712
 							]
 						],
 						"settings":
@@ -776,7 +761,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3578.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -805,61 +790,6 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "working-Menu4.html",
-					"settings":
-					{
-						"buffer_size": 16740,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3553,
-								4394
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 457.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "css/component.css",
-					"settings":
-					{
-						"buffer_size": 2252,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1413,
-								1764
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1125.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -926,7 +856,7 @@
 		[
 			[
 				"",
-				"/Z/Public/webDevelopment/master/MASTER.sublime-project"
+				"/Z/Public/$BCF_Website/Development/003-Production5/bcf.sublime-project"
 			]
 		],
 		"width": 380.0

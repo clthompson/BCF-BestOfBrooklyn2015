@@ -1,0 +1,21 @@
+opt_forSmall - display option for small screens
+anc_link - optional linked page (if empty the link will refernce the current page)
+stf_anchor - link anchor (typically a section of the current page)
+stf_linkText - text label
+
+Red Dots
+            <!IoRangeRedDotMode><div style="background-color: #fff"></br><!IoRedDotOpenPage><!IoRangeNoEditMode><span style="color:red">Open Link</span><!/IoRangeNoEditMode>
+            <!IoRangeRedDotEditOnly><span style="color:red">Close Link</span></br><!/IoRangeRedDotEditOnly><!/IoRangeRedDotMode>
+            <!IoRangeRedDotEditOnly>
+              <!IoRedDot_anc_link><span style="color:red">Add/Edit Link</span></br>
+              <!IoRedDot_stf_anchor><span style="color:red">Add/Edit Anchor Target</span></br>
+              <!IoRedDot_stf_linkText><span style="color:red">Add/Edit Link Text</span></br>
+              <!IoRedDot_opt_forSmall><span style="color:red">Display/Hide Link for Small Screens?</span></br></div>
+            <!/IoRangeRedDotEditOnly>
+               
+Code
+<li class="<%opt_forSmall%>"><a href="<!IoRangeConditional><%anc_link%><!/IoRangeConditional><!IoRangeConditional>#<%stf_anchor%><!/IoRangeConditional>"
+     ga-category="BOB" ga-action="Navigate" ga-label="BOB Nav <%stf_anchor%>"><%stf_linkText%></a></li>
+
+<!IoRangeRedDotMode></br><!/IoRangeRedDotMode>
+ 

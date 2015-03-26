@@ -1,0 +1,29 @@
+img_backgroundLarger - background image for larger screens 
+img_backgroundSmaller - background image for smaller screens
+stf_anchorTarget - section anchor name
+opt_top - turn this on if there is no image ready
+img_graphicSmaller - smaller centered logo image
+img_graphicLarger - larger centered logo image
+
+Code
+<!IoRangeNoRedDotMode>
+<style>
+    .featureContainer {background-image: url("<%img_backgroundLarger%>");}
+    @media screen and (max-width: 640px) {
+    .featureContainer {background-image: url("<%img_backgroundSmaller%>");}}
+</style>
+<span class="anchor" id="<%stf_anchorTarget%>"></span>
+        <div class="">
+            <!IoRangeConditional><div class="row featureTop <%opt_top%>"></div><!/IoRangeConditional>
+            <!IoRangeConditional><div class="row featureContainer">
+                <div class="featureImage">
+                    <img src="http://www.brooklyn.cuny.edu/web/adm_2013marketing/trans.gif"
+                        data-src0="<%img_graphicSmaller%>"
+                        data-src768="<%img_graphicLarger%>"/>
+                </div>
+                <section class="bigArrow">
+                    <div class="arrowDown"></div>
+                </section>
+            </div>
+        </div><!/IoRangeConditional>
+<!/IoRangeNoRedDotMode>
