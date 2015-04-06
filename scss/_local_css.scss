@@ -31,7 +31,7 @@
 
 // Backgrounds and Sprite Sheets
   $background-d: url('http://www.brooklyn.cuny.edu/web/sup_foundation/diagonals.png');
-  $SpriteSheet: url('http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_256x142.png');
+  $SpriteSheet: url('http://www.brooklyn.cuny.edu/web/sup_foundation/BOB_spriteSheet_400x142.png');
 
 // Colors
   $color-maroon: #781a42; //#7c2142 BCF
@@ -313,11 +313,17 @@ header {
       //&:hover {
       //  background: $SpriteSheet no-repeat -142px 0px;
       //}
+      &:hover {
+        background: $SpriteSheet no-repeat -255px -94px;
+      }
       @media #{$Medium} {
         background: $SpriteSheet no-repeat 0px -52px;
         width: 122px;
         height: 40px;
         margin-top: 15px;
+        &:hover {
+          background: $SpriteSheet no-repeat -255px -52px;
+        }
       }
       //@media #{$Small} {
       //  display: none;

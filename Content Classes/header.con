@@ -1,3 +1,4 @@
+anc_logo - logo link 
 stf_logoAnchor - logo link target (always goes to the top of the page)
 img_logo - logo image
 con_navigation - navigation elements container
@@ -8,7 +9,7 @@ Code
             <!-- full Desktop menu -->
             <div class="large-12 columns hide-for-medium hide-for-small">
                 <!-- logo -->
-                <a href="#<%stf_logoAnchor%>"><img class="logo" src="<%img_logo%>"></a>
+                <a href="<!IoRangeConditional><%anc_logo%><!/IoRangeConditional><!IoRangeConditional>#<%stf_logoAnchor%><!/IoRangeConditional>"><img class="logo" src="<%img_logo%>"></a>
                 <!-- menu -->
                 <nav class="topBar">
                     <ul class="right">
@@ -22,7 +23,7 @@ Code
             <!-- begin Tablet/Mobile menu -->
             <div class="large-12 columns hide-for-large-up">
                 <!-- logo -->
-                <a href="#<%stf_logoAnchor%>"><img class="logo" src="<%img_logo%>"></a>
+                <a href="<!IoRangeConditional><%anc_logo%><!/IoRangeConditional><!IoRangeConditional>#<%stf_logoAnchor%><!/IoRangeConditional>"><img class="logo" src="<%img_logo%>"></a>
                 <div class="showPushMenu right" id="<%opt_menuType%>"></div>
                             <!-- menu -->
                 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
@@ -34,14 +35,8 @@ Code
             <!-- end Tablet/Mobile menu -->
         </section>
 
-Red Dots
             <!IoRangeRedDotMode><section class="row"><div class="large-12 columns" style="padding: 15px 0px 0px 0px;"><!/IoRangeRedDotMode>
             <!IoRangeRedDotMode><!IoRedDotOpenPage><!IoRangeNoEditMode><span style="color:red">Open Header</span><!/IoRangeNoEditMode>
             <!IoRangeRedDotEditOnly><span style="color:red">Close Header</span><!/IoRangeRedDotEditOnly><!/IoRangeRedDotMode>
             <!IoRangeRedDotEditOnly><!IoRedDot_con_navigation><span style="color:red">Add/Edit/Order navigation Items</span><!/IoRangeRedDotEditOnly>
             <!IoRangeRedDotMode></div></section><!/IoRangeRedDotMode>
-
-    
-
-
- 
