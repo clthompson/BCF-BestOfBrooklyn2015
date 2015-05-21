@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"outer",
+				"outerHeight"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
 				"di",
 				"DIV	Tag"
 			],
@@ -19,7 +31,7 @@
 			"file": "css/bob.css",
 			"settings":
 			{
-				"buffer_size": 55914,
+				"buffer_size": 56392,
 				"line_ending": "Windows"
 			}
 		},
@@ -35,7 +47,15 @@
 			"file": "scss/_local_css.scss",
 			"settings":
 			{
-				"buffer_size": 17064,
+				"buffer_size": 17342,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "diagram.html",
+			"settings":
+			{
+				"buffer_size": 471,
 				"line_ending": "Windows"
 			}
 		},
@@ -116,6 +136,32 @@
 	},
 	"file_history":
 	[
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/scss/_settings.scss",
+		"/Z/Public/webDevelopment/projects/sampleSubProject/index.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter06/animate_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter10/tooltip_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter10/slider_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter10/tabs_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter08/menu_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter08/in-page-links_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter07/fancybox_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter07/gallery_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter07/gallery.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter07/rollover_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter07/complete_rollover.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter06/complete_animate.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter06/signup_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter06/multiple-callbacks.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter06/callback.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter06/easing_example1.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter05/faq_MOD.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter05/events_intro_MOD.html",
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/working.html",
+		"/Z/Public/webDevelopment/projects/BCF-BestOfBrooklyn2015/Content Classes/header.con",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter03/complete_quiz.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/jstests.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter04/pull-quote - Copy.html",
+		"/C/Users/jdoe/Dropbox/L/JavaScript_and_jQuery_The_Missing_Manual_Second_Edition/chapter04/pull-quote.html",
 		"/Z/Public/webDevelopment/master/scss/_custom.scss",
 		"/Z/Public/webDevelopment/master/css/app.css",
 		"/Z/Public/webDevelopment/master/config.rb",
@@ -212,6 +258,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"center",
+			"ul",
 			"$small-screen",
 			"1500px",
 			"<p>",
@@ -238,7 +286,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -246,7 +294,7 @@
 					"file": "css/bob.css",
 					"settings":
 					{
-						"buffer_size": 55914,
+						"buffer_size": 56392,
 						"regions":
 						{
 						},
@@ -263,7 +311,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4300.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -299,15 +347,15 @@
 					"file": "scss/_local_css.scss",
 					"settings":
 					{
-						"buffer_size": 17064,
+						"buffer_size": 17342,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8570,
-								8598
+								13340,
+								13340
 							]
 						],
 						"settings":
@@ -317,13 +365,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5128.0,
+						"translation.y": 8451.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "diagram.html",
+					"settings":
+					{
+						"buffer_size": 471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "working.html",
 					"settings":
 					{
@@ -334,8 +408,8 @@
 						"selection":
 						[
 							[
-								20371,
-								20476
+								0,
+								0
 							]
 						],
 						"settings":
@@ -345,7 +419,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7013.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -421,6 +495,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 205.0,
+	"side_bar_width": 264.0,
 	"status_bar_visible": true
 }
